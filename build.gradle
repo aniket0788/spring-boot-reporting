@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.4.RELEASE")
+
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '1.4.4.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+
+group = 'com.nationstar.reportengine'
+version = '0.0.1-SNAPSHOT'
+
+description = """ReportsEngine"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile files('lib/ojdbc7-12.1.0.1.jar')
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version:'1.4.4.RELEASE'
+//  compile group: 'com.oracle', name: 'ojdbc7', version:'12.1.0.1'
+    compile group: 'com.opencsv', name: 'opencsv', version:'3.8'
+    compile group: 'org.mockito', name: 'mockito-all', version:'1.9.5'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version:'1.4.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version:'1.4.4.RELEASE'
+    compile group: 'org.testng', name: 'testng', version:'6.8.13'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.7'
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version:'1.4.4.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context-support', version:'4.3.3.RELEASE'
+    compile group: 'org.quartz-scheduler', name: 'quartz', version:'2.2.1'
+    compile group: 'org.springframework', name: 'spring-oxm', version:'4.1.5.RELEASE'
+    compile group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.moxy', version:'2.4.2'
+    compile("org.springframework.boot:spring-boot-starter-mail:1.5.3.RELEASE")
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.4.4.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+}
+
+test {
+    ignoreFailures = true
+}

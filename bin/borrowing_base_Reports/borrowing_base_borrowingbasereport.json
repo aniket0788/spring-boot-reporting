@@ -1,0 +1,1000 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "ChampionBorrowingBaseReport",
+  "investorName": "",
+  "servicerID": "",
+  "sqlQueryFileName": "borrowing_base_borrowingbasereport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "Pool Name",
+          "columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "pool_name",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "FHA Case Number",
+          "columnDescription": "This field will contain the unique FHA Case Number assigned to each loan by our investor",
+          "columnType": "SQL",
+          "sqlColumnName": "fha_case_number",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Champion Loan Number",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_number",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Barclays Loan ID",
+          "columnDescription": "This field will contain the unique number assigned to each loan by Barclays",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Property State",
+          "columnDescription": "This field will contain the State of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "property_state",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Interest Rate",
+          "columnDescription": "This field will contain the Number of the Current Interest Rate at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "cur_int_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Investor Loan Number",
+          "columnDescription": "This field will contain the unique investor number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "investor_loan_num",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Borrower Last Name",
+          "columnDescription": "This field will contain the Borrower's Last Name",
+          "columnType": "SQL",
+          "sqlColumnName": "bor_last_name",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Loan Status",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Pay Plan",
+          "columnDescription": "This field will contain the current Payment Plan type at the end of  the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "pay_plan",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Product Type",
+          "columnDescription": "This field will contain the Product Type at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "product_type",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MERS ID",
+          "columnDescription": "This field will contain a 'Yes' or 'No' indicator for loans which do not have a MERS # (NO) and loans which have a MERS # (Yes), Hardcode this field to 'N/A'",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Origination Date",
+          "columnDescription": "This field will contain the DATE in which the Loan was originated",
+          "columnType": "SQL",
+          "sqlColumnName": "origination_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Package Sent to HUD",
+          "columnDescription": "HARDCODE TO BLANK",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Original Note Sent to HUD",
+          "columnDescription": "HARDCODE TO BLANK",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Initial Claim Filed",
+          "columnDescription": "This field will contain the DATE in which the Initial Claim was filed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Pmnt Due Date",
+          "columnDescription": "This field will contain the DATE of the LAST Payment Due Date recorded",
+          "columnType": "SQL",
+          "sqlColumnName": "due_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Default Date (Called Due Date if No Default Date Available)",
+          "columnDescription": "This field will contain the DATE of the LAST time the loans became defaulted, If the Default Date is blank then this field will contain the DATE of the LAST time the loan became Called Due",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Called Due Date",
+          "columnDescription": "This field will contain the DATE of the LAST time the loans became Called Due",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "FCL 1st Legal Completed Date",
+          "columnDescription": "This field will contain the LATEST DATE in which the  Foreclosure 1st legal action was completed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "FCL Confirmed Sale Date",
+          "columnDescription": "This field will contain the LATEST DATE in which the Foreclosure Sale was confirmed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Marketable Title Date",
+          "columnDescription": "HARDCODE TO BLANK",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Debenture Interest",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "HUD Insured",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Total Loan Balance",
+          "columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "tot_loan_bal",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Max Claim Amount",
+          "columnDescription": "This field will contain the Amount of the Current Max Claim at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mca",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Percent",
+          "columnDescription": "This field will contain the % value when we divide the 'Total Loan Balance' by 'Max Claim Amount' at the last day of the reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "GNMA Buy-Out  Date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Borrowing Base Report Date",
+          "columnDescription": "This field will contain the DATE the report was created",
+          "columnType": "Calculate",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "ReportingMonthProcessDateCalculator",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Month Pledged to Facility",
+          "columnDescription": "This field will contain the DATE the report was pledge to the facility, HARDCODED TO NULL",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NULL"
+        },
+        {
+          "columnName": "Lion HECM Type",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Judicial State",
+          "columnDescription": "If the property state is in a Judicial state then YES else NO (use the XREF sheet for look up of states)",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "S&D",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Current Balance",
+          "columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "cur_balance",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Mark Rate %",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Advance Rate %",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Advance",
+          "columnDescription": "This field will contain the MIMIMUM Amount between the Current Balance and the following calculation (Current Balance * Mark Rate * Advance Rate)",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "# days outstanding",
+          "columnDescription": "This field will contain the Date Difference between Borrower Base Report Date & Month Pledged to Facility",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Y/N",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Actual Advance",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Sales Proceeds Amount",
+          "columnDescription": "This field will contain the SUM Amount of any Sales proceeds (take into consideration any reversals) during the reporting month as per the sell of the asset",
+          "columnType": "SQL",
+          "sqlColumnName": "sales_proceeds_amt",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Initial Claim Proceeds Amount",
+          "columnDescription": "This field will contain the SUM Amount of any Initial Claim proceeds  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Most Recent Appraisal Value",
+          "columnDescription": "This field will contain the Last Appraisal Value associated with a loan during the current reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Most Recent Appraisal Value Date",
+          "columnDescription": "This field will contain the Date in which the Last Appraisal was performed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Appraisal Original or Updated",
+          "columnDescription": "This field will contain the either an 'Original' value in the case the most recent appraisal was done at the time the loan was originated, This field will contain the either an 'Updated' value in the case the most recent appraisal was done after the loan was originated",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Prop Zip Code",
+          "columnDescription": "This field will contain the Zip Code  of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "prop_zipcode",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Sutton",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Collection",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "address",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "armindex",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "armmargin",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "BK_FLAG",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borr_1_age",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borr_1_first_name",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borr_2_age",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borr_2_first_name",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borr_2_last_name",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borrower_birth_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "borrower_death_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "CITY",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "coborrower_birth_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "coborrower_death_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "corp_adv_bal",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "effective_time",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "first_rate_adjust_period",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "funding_batch",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "funding_id",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "funding_method_code",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_abanum",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_accountnum",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_address",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_city",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_instruction1",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_instruction2",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_name",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_state",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee1_zip",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_abanum",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_accountnum",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_address",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_city",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_instruction1",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_instruction2",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_name",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_state",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "payee2_zip",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "principal_limit",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "product_code",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "PROPERTY_TYPE",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "servicing_fee",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "ss_number",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "ss_number_2",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "UNITS",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "hcm_status_cat",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "hcm_sub_status",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "inv_commit_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "inv_commit_expire_date",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "inv_commit_number",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "inv_commit_price",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "investor_code",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "investor_loan_id",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "is_adjustable",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "mtg_ins_pct",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "occupancy_code",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "orig_appraised_value",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "orig_rate",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "original_ltv",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        }
+      ]
+    }
+  ]
+}

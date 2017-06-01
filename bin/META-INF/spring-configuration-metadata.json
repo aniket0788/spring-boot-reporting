@@ -1,0 +1,107 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.RecipientMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.RecipientMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.scheduler.QuartzJobScheduling",
+      "sourceType": "com.nationstar.reportengine.scheduler.QuartzJobScheduling"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.TransactionCodeMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.TransactionCodeMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.LoanStatusCodeMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.LoanStatusCodeMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.ReportDownloadLocationMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.ReportDownloadLocationMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.RateTypeMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.RateTypeMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.FNMATransactionCodeMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.FNMATransactionCodeMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.PaymentPlanMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.PaymentPlanMapper"
+    },
+    {
+      "name": "",
+      "type": "com.nationstar.reportengine.mapper.TransacationDesignatorMapper",
+      "sourceType": "com.nationstar.reportengine.mapper.TransacationDesignatorMapper"
+    }
+  ],
+  "properties": [
+    {
+      "name": "loan-status-code-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.LoanStatusCodeMapper"
+    },
+    {
+      "name": "payment-plan-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.PaymentPlanMapper"
+    },
+    {
+      "name": "rate-type-mapper",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.RateTypeMapper"
+    },
+    {
+      "name": "recipient-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.RecipientMapper"
+    },
+    {
+      "name": "report.nationstar.meca.report.basepath",
+      "type": "java.lang.String",
+      "description": "A description for 'report.nationstar.meca.report.basepath'"
+    },
+    {
+      "name": "report.nationstar.meca.report.path",
+      "type": "java.lang.String",
+      "description": "A description for 'report.nationstar.meca.report.path'"
+    },
+    {
+      "name": "reports-destination-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.ReportDownloadLocationMapper"
+    },
+    {
+      "name": "scheduler.enable",
+      "type": "java.lang.String",
+      "description": "A description for 'scheduler.enable'"
+    },
+    {
+      "name": "transaction-code-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.TransactionCodeMapper"
+    },
+    {
+      "name": "transaction-code-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.FNMATransactionCodeMapper"
+    },
+    {
+      "name": "transaction-designator-map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.nationstar.reportengine.mapper.TransacationDesignatorMapper"
+    }
+  ],
+  "hints": []
+}

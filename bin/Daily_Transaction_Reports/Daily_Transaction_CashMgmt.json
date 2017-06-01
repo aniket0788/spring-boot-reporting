@@ -1,0 +1,466 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "DailyCashMgmtTransReport",
+	"investorName": "",
+	"servicerID": "",
+	"sqlQueryFileName": "Daily_Transaction_CashMgmt.sql",
+	"appendPoolNumber": false,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		}
+   ],
+	"reportTabs": [
+		{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "LOAN_NO",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "CASE_NO",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "case_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "VENDOR_ID",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Vendor_ID",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "FUNDING_DATE",
+					"columnDescription": "",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "funding_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "IDX",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "idx",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "TRANSACTION_TYPE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "transaction_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "TRANSACTION_DATE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "transaction_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				
+				
+				{
+					"columnName": "POST_DATE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "post_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "TRAN_STATUS",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "tran_status",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "TRAN_STATUS_CHANGED_DATE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "tran_status_changed_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "SAME_DAY_TRAN_CANCELLATION",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Same_Day_Tran_Cancellation",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "UPB",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "AMOUNT",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "MISC_SERV_FEE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Misc_Servicing_Fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Legal_Fees",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Legal_Fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "HUD_Disbursements",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "HUD_Disbursements",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Property_Preservation_Fees",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Preservation_Fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Loss_Draft_Funds",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loss_Draft_Funds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Title_Fee_and_Recording_Fees",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Title_Fee_and_Recording_Fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "County_Recording_Fees",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "County_Recording_Fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": " Write-Off Payoff Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "writeoff_payoff_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Write-Off Cost Center Assignment",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "writeoff_payoff_cost_center",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "Write-Off Adjustments Cost Center",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Writeoff_Adjs_cost_center",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":""
+				},
+				{
+					"columnName": "BORR_FIRST_NAME",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borr_First_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "BORR_LAST_NAME",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borr_Last_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "COBORR_FIRST_NAME",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorr_First_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "COBORR_LAST_NAME",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorr_Last_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "INVESTOR_CODE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "investor_code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "INVESTOR_LOAN_NO",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "investor_loan_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PAYMENT_TYPE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "payment_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "RECORD_TYPE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "RECORD_TYPE",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "USER_ID",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "user_id",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PMNT_METHOD",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "pmnt_method",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DEPOSIT_BANK_NAME",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "deposit_bank_name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DEPOSIT_BANK_ACNT_NO",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "deposit_bank_acnt_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DEPOSIT_BANK_ROUT_NO",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "deposit_bank_rout_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MAILTO_STREET",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "mailto_street",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MAILTO_CITY",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "mailto_city",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MAILTO_STATE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "mailto_state",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MAILTO_ZIP",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "mailto_zip",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "NOTE",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "note",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+		  ]
+		},
+		{
+			"tabName": "Summary",
+			"reportColumns": [
+				{
+					"columnName": "",
+					"columnDescription": "",
+					"columnType": "",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

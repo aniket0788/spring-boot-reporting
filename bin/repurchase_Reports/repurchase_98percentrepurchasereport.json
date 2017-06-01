@@ -1,0 +1,253 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "Champion98%RepurchaseReport",
+  "investorName": "BOA",
+  "servicerID": "",
+  "sqlQueryFileName": "repurchase_98percentrepurchasereport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "PROCESS_DATE",
+          "columnDescription": "This field will contain the DATE in which the  Report was created MINUS 1 day",
+          "columnType": "Calculate",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "ReportingMonthProcessDateCalculator",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "month_ending",
+          "columnDescription": "This field will contain the LAST DAY OF THE REPORTING MONTH ",
+          "columnType": "Calculate",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "ReportingMonthEndDateCalculator",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "LOAN_NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CLIENT_LOAN_NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by Client/Investor",
+          "columnType": "SQL",
+          "sqlColumnName": "client_loannum",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "FCL_1ST_LEGAL_COMPLETED_DATE",
+          "columnDescription": "This field will contain the LATEST DATE in which the  Foreclosure 1st legal action was completed",
+          "columnType": "SQL",
+          "sqlColumnName": "fcl_1stlegal_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        },
+        {
+          "columnName": "FCL_CONFIRMED_SALE_DATE",
+          "columnDescription": "This field will contain the LATEST DATE in which the  Foreclosure Sale was confirmed",
+          "columnType": "SQL",
+          "sqlColumnName": "fc1_confirmed_saledate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        },
+        {
+          "columnName": "BORROWER_FIRST_NAME",
+          "columnDescription": "This field will contain the Borrower's First Name",
+          "columnType": "SQL",
+          "sqlColumnName": "BORROWER_FIRST_NAME",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PROP_STATE",
+          "columnDescription": "This field will contain the STATE of the property ",
+          "columnType": "SQL",
+          "sqlColumnName": "PROP_STATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Investor",
+          "columnDescription": "This field will contain the unique investor name assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "investor",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Counterparty",
+          "columnDescription": "This field will contain the unique counterparty name assigned to each loan",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        },
+        {
+          "columnName": "CURRENT_TOTAL_UPB",
+          "columnDescription": "This field will contain the UPB value of the loan at the time the report was created minus 1 day",
+          "columnType": "SQL",
+          "sqlColumnName": "cur_total_upb",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CURRENT_INTEREST_RATE",
+          "columnDescription": "This field will contain the Current Interest Rate at the time the report was created",
+          "columnType": "SQL",
+          "sqlColumnName": "cur_int_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "acc_int",
+          "columnDescription": "This field will contain the SUM Amount of any Interests accrued (take into consideration any reversals) during the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "acc_int",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MIP_Rate",
+          "columnDescription": "This field will contain the MIP Rate for the current reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mip_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MIP",
+          "columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) during the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mip",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "SERVICE_FEES",
+          "columnDescription": "This field will contain the SUM Amount of any Servicing Fee accrued (take into consideration any reversals) during the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "service_fees",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "total_loan",
+          "columnDescription": "This field will contain the outcome of the following calculation:",
+          "columnType": "SQL",
+          "sqlColumnName": "total_loan",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MAX_CLAIM_AMOUNT",
+          "columnDescription": "This field will contain the Amount of the Current Max Claim at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mca",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "percent",
+          "columnDescription": "This field will contain the outcome of the following calculation:",
+          "columnType": "SQL",
+          "sqlColumnName": "mca_percent",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "STATUS_DESCRIPTION",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the time the report is created",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Category",
+          "columnDescription": "This field will contain the unique counterparty name assigned to each loan",
+          "columnType": "SQL",
+          "sqlColumnName": "category",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Sort",
+          "columnDescription": "This field will contain the unique counterparty name assigned to each loan",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        },
+        {
+          "columnName": "MIN NBR",
+          "columnDescription": "This field will contain the unique MERS Number assigned to each loan",
+          "columnType": "SQL",
+          "sqlColumnName": "min_nbr",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Pool Name",
+          "columnDescription": "This field will contain the unique Investor/Pool Name assigned to the loan base on the following logic",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        }
+      ]
+    }
+  ]
+}

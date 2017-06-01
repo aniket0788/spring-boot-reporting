@@ -1,0 +1,193 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "RM_Float",
+	"investorName": "MECA-2011",
+	"servicerID": "268800000",
+	"sqlQueryFileName": "MECA2011_RM_Float.sql",
+	"appendPoolNumber": false,
+	"appendVersion": true,
+	"appendInvestorName": false,
+	"appendServicerId": true,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMM",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		}
+	],
+	"reportTabs": [
+			{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "Effective Date ",
+					"columnDescription": "This is the post date column",
+					"columnType": "SQL",
+					"sqlColumnName": "Effective_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Non-Cash",
+					"columnDescription": "This is the Non-Cash column",
+					"columnType": "SQL",
+					"sqlColumnName": "Non_Cash",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payoff",
+					"columnDescription": "This is the PayOff column",
+					"columnType": "SQL",
+					"sqlColumnName": "Payoff",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Prepayment",
+					"columnDescription": "This is the Prepayment column",
+					"columnType": "SQL",
+					"sqlColumnName": "Prepayment",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Unscheduled",
+					"columnDescription": "This is the Unscheduled column",
+					"columnType": "SQL",
+					"sqlColumnName": "Unscheduled",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Scheduled",
+					"columnDescription": "This is the Scheduled column",
+					"columnType": "SQL",
+					"sqlColumnName": "Scheduled",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Advances",
+					"columnDescription": "This is the Advances column",
+					"columnType": "SQL",
+					"sqlColumnName": "Advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Receipts",
+					"columnDescription": "This is the Receipts column",
+					"columnType": "SQL",
+					"sqlColumnName": "Receipts",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		},
+		{
+			"tabName": "CM",
+			"reportColumns": [
+				{
+					"columnName": "Index",
+					"columnDescription": "index",
+					"columnType": "SQL",
+					"sqlColumnName": "TBD",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

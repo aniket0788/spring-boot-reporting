@@ -1,0 +1,176 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyPaidOffReport",
+	"investorName": "",
+	"servicerID": "",
+	"sqlQueryFileName": "Securitizations_Everbank_Paid_Off.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{	"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Paid Off Loans",
+			"reportColumns":[
+				{
+					"columnName": "Pool Name",
+					"columnDescription": " This field will contain the unique Pool Name assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "Pool_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Champion Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "Champion_Loan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Name of Borrower",
+					"columnDescription": "This field will contain the Borrower's First Name + Middle Name + Last Name",
+					"columnType": "SQL",
+					"sqlColumnName": "Name_of_Borrower",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Servicing Fee",
+					"columnDescription": "This field will contain the SUM Amount of any Servicing Fee accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Servicing_Fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "MIP Interest Accrued",
+					"columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "MIP_interest_accrued",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Payoff Fees",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs Fees accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "payoff_fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Payoff Amount",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs  (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "payoff_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Excess or Shortfall",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs Excesses or Shortfalls  (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Excess_or_Shortfall",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Ending Balance",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Ending_Balance",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "PayoffDate",
+					"columnDescription": "This field will contain the DATE in which the Payoff transaction was effective",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "PayoffDate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Current Interest Rate",
+					"columnDescription": "This field will contain the Current Interest Rate at the last day of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "current_interest_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Loan Status",
+					"columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "Payoff"
+					
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "ChampionHERMITReport",
+  "investorName": "",
+  "servicerID": "",
+  "sqlQueryFileName": "hermit_hermitreport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "LOAN NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_num",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "FHA_CASE_NBR",
+          "columnDescription": "This field will contain the unique FHA Case Number assigned to each loan by our investor",
+          "columnType": "SQL",
+          "sqlColumnName": "fha_caseno",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Pool",
+          "columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "pool",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        }
+      ]
+    }
+  ]
+}

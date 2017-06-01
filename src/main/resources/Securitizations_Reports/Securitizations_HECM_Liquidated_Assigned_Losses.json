@@ -1,0 +1,89 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": " ChampionMonthlyAssignedReport",
+	"investorName": "Met Scratch and Dent",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Securitizations_HECM_Liquidated_Assigned_Losses.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+		"sqlArguments": [
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Liquidated_Assigned Losses",
+			"reportColumns":[
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "nationstar_loanno",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Investor",
+					"columnDescription": "This field will contain the unique Investor/Pool Name assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "investor",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Current UPB",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "current_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "NSM Losses",
+					"columnDescription": "This field will contain the SUM Amount of any Write-offs accrued  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Claim Type",
+					"columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				}
+			]
+		}
+	]
+}

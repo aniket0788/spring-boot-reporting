@@ -1,0 +1,38 @@
+{
+	"CPI_MECA1": [
+		{
+			"contextpath": "/Custom_Private_Investor_/MECA/",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"startDate": "04/01/2017",
+			"endDate": "04/30/2017",
+			"deliveryMethod": "LOCALCOPY",
+			"poolName": "FNMA00000"
+		}
+	],
+	"CPI_DETAILS": [
+		{
+			"contextpath": "/Custom_Private_Investor_/MD_Detail/",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"startDate": "04/01/2017",
+			"endDate": "04/30/2017",
+			"deliveryMethod": "LOCALCOPY",
+			"poolName": "FNMA00000"
+		}
+	],
+	"Private_investor_Details": [
+		{
+			"contextpath": "/Private_Investor_/Details/",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"startDate": "04/01/2017",
+			"endDate": "04/30/2017",
+			"deliveryMethod": "LOCALCOPY",
+			"poolName": "FNMA00000"
+		}
+	]
+}

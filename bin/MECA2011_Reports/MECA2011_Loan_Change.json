@@ -1,0 +1,867 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "RM_LN_CHG",
+	"investorName": "MECA-2011",
+	"servicerID": "268800000",
+	"sqlQueryFileName": "MECA2011_Loan_Change.sql",
+	"appendPoolNumber": false,
+	"appendVersion": true,
+	"appendInvestorName": false,
+	"appendServicerId": true,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMM",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "Fannie Mae Loan Identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Fannie_Mae_Loan_Identifier",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Previous Fannie Mae Loan Identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Prevs_Fannie_Mae_Loan_Identfr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Mers Identification",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Mers_Identification",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Number of Borrowers",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Number_of_Borrowers",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Age",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_Age",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Birthday",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_Birthday",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Ethnics Code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_Ethnics_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's race code 1",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_race_code_1",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Borrower's race code 2",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_race_code_2",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's race code 3",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_race_code_3",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's race code 4",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_race_code_4",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's race code 5",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_race_code_5",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Social Security Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_SSN",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Gender",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_Gender",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Borrower's Gross Monthly Income",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Borrower's_Gross_Mnthly_Income",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Age",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Age",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Birthday",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Birthday",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Ethnics Code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Ethnics_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Race Code1",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Race_Code1",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Race Code2",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Race_Code2",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Race Code3",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Race_Code3",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Race Code4",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Race_Code4",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Race Code5",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Race_Code5",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Social Security Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_SSN",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Co-Borrower's Gender",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "CoBorrower's_Gender",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Structure Built Year",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Structure_Built_Year",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Dwelling Type",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Dwelling_Type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Street Address",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Street_Address",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property City",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_City",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property State",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_State",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Zip Code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Zip_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Number of Bedrooms",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Number_of_Bedrooms",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Number of Units",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Number_of_Units",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Adjustment Value",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Adjustment_Value",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Appraisal Value",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Appraisal_Value",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Appraiser's Identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Appraiser's_Identfr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "The Supervisor's Identifier of Property Appraiser",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "The_Sup_Identfr_of_Prop_Appr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Property Sales Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Property_Sales_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Contract Commitment Period",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Contrat_Commitment_Period",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Contract Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Contract_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Contract Type Code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Contract_Type_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Contract Original Region Code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Contract_Org_Region_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DDF Document Certified Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "DDF_Document_Certified_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DDF Document Received Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "DDF_Document_Received_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Originator company ID",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Originator_comp_ID",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Originator ID",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Originator_ID",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Lender loan number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Lender_loan_number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "FHA/VA Case Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "FHA/VA_Case_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "FHA/VA Case Number Assignment Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "FHA/VA_Case_No_Assignment_Dt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Funding Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Funding_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Purchase Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Purchase_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Rounding Indicator",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Rounding_Indicator",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Scheduled Closing Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Scheduled_Closing_Dt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Purpose",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Purpose",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Product Type and Interest rate type",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Prod_and_Intrst_rate_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan first Disburse Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_first_Disburse_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "First P&I Payment Change Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "1st_P_and_I_Paymnt_Chng_Dt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Disburse Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Disburse_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Disburse Date",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Disburse_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Origination Fee Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Origination_Fee_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Other Closing Cost Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Other_Closing_Cost_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Total Closing Cost Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Total_Closing_Cost_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Maturity Terms",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Maturity_Terms",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Maturity and LOC ratio",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Maturity_and_LOC_ratio",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Seasonal loan fee",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Seasonal_loan_fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Product type code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Product_type_code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Interest Rate type code",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Intrst_Rate_type_code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Initial Interest Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Initial_Interest_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan ARM Plan Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_ARM_Plan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original Index Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Original_Index_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Mortgage Margin Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Mortgage_Margin_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Mortgage Ceiling Interest Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Mortgage_Ceiling_Interest_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Mortgage Floor Interest Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Mortgage_Floor_Interest_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Expected Average Index Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Expected_Average_Index_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Expected Average Interest Rate",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Expected_Average_Interest_Rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original UPB",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Original_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Original First Year Property Expense Set Aside Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Org_1stYr_Prop_Ex_St_Aside_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Lien Advance Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Lien_Advance_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Other Draw Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Other_Draw_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Financial Maximal Claim Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Financial_Max_Claim_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original Principle Limit Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Orig_Principle_Limit_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original Net Principle Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Orig_Net_Principle_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original Repair Set Aside Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Orig_Repair_St_Aside_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Original Scheduled Payment Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Orig_Scheduled_Paymnt_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Servicer Fee Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Servicer_Fee_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Initial Servicer Fee Set Aside Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Init_Svr_Fee_St_Aside_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Seller Record Contact Information Identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Seller_Rd_Contact_Info_Idntfr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Seller Servicer Record Contact Information identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Seller_Svr_Rd_Cont_Info_Idntfr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Servicer Record Contact Information Identifier",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Servicer_Rd_Cont_Info_Idntfr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Original LOC Reserve Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Original_LOC_Reserve_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Original Net LOC Reserve Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Orig_Net_LOC_Reserve_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Original Monthly T&I withheld Amount",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Orig_Monthly_TI_withheld_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+		  ]
+		}
+	]
+}

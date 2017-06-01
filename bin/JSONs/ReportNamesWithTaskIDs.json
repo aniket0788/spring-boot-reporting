@@ -1,0 +1,199 @@
+{
+	"reportData": [
+		{
+			"reportName": "Private Investor - Details",
+			"url": "/Private_Investor_/Details/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - Paid Off",
+			"url": "/Custom_Private_Investor_/Paid_Off/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - Everbank Detail Activity",
+			"url": "/Securitizations_/Everbank_Detail_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - Everbank Month Activity",
+			"url": "/Securitizations_/Everbank_Month_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - MD_Activity",
+			"url": "/Custom_Private_Investor_/MD_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - GugLAC",
+			"url": "/Custom_Private_Investor_/GugLAC/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - MECA",
+			"url": "/Custom_Private_Investor_/MECA/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - MD_Detail",
+			"url": "/Custom_Private_Investor_/MD_Detail/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Private Investor - Paid Off",
+			"url": "/Private_Investor_/Paid_Off/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Private Investor - PI Activity",
+			"url": "/Private_Investor_/PI_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Remittance",
+			"url": "/Remit_Reimb_/Remittance/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Reimbursement",
+			"url": "/Remit_Reimb_/Reimbursement/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "MECA2011 - RM_Final",
+			"url": "/MECA2011_/RM_Final/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "MECA2011 - RM_MONTHLY",
+			"url": "/MECA2011_/Balances_and_Interest_Rate/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Pool Security - Reconciliation",
+			"url": "/Pool_Security_/Reconciliation/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "MECA2011 - RM_Float",
+			"url": "/MECA2011_/RM_Float/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "MECA2011 - RM_PYMT_CHG",
+			"url": "/MECA2011_/Payment_Change_Plan/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "MECA2011 - RM_TXNS",
+			"url": "/MECA2011_/Servicing_Transaction/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - Everbank Detail Activity",
+			"url": "/Securitizations_/Everbank_Detail_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - Everbank Month Activity",
+			"url": "/Securitizations_/Everbank_Month_Activity/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - Everbank Paid Off",
+			"url": "/Securitizations_/Everbank_Paid_Off/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - HECM Losses",
+			"url": "/Securitizations_/HECM_Losses/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - HECM Liquidated Assigned Losses",
+			"url": "/Securitizations_/HECM_Liquidated_Assigned_Losses/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Securitizations - HECM Trial Balance",
+			"url": "/Securitizations_/HECM_Trial_Balance/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Daily Unscheduled Report",
+			"url": "/Daily_Transaction_/Unscheduled/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Cash Management Unscheduled Report",
+			"url": "/Daily_Transaction_/CashMgmt/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Disbursement Trial balance",
+			"url": "/Daily_Disbursement_/CHKACH/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Disbursement Check File",
+			"url": "/Daily_Disbursement_/Check/",
+			"reportFormat" : "xml"
+		},
+		{
+			"reportName": "Disbursement NACHA File",
+			"url": "/Daily_Disbursement_/NACHA/",
+			"reportFormat" : "txt"
+		},
+		{
+			"reportName": "MECA2011 - RM_LN_CHG",
+			"url": "/MECA2011_/Loan_Change/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "REO Acct. Report",
+			"url": "/reo_acct_/reoacctreport/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Monthly Details Report",
+			"url": "/monthlydetails_/monthlydetailreport/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "Monthly Trial Balance Report",
+			"url": "/monthlystatus_/monthlystatusreport/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "98% Repurchase Report",
+			"url": "/repurchase_/98percentrepurchasereport/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "BOA-RMSEarlyBuyoutsTransferReport",
+			"url": "/monthlybana_/boa_rmsearlybuyoutstransfer/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "Suspense Account Report",
+			"url": "/suspense_account_/suspensetransreport/",
+			"reportFormat": "csv"
+		},
+		{
+			"reportName": "HERMIT Report",
+			"url": "/hermit_/hermitreport/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Borrowing Base Report",
+			"url": "/borrowing_base_/borrowingbasereport/",
+			"reportFormat" : "csv"
+		},
+		{
+			"reportName": "Custom Private Investor - MD_Activity_All_Pools",
+			"url": "/Custom_Private_Investor_/MD_Activity_AllPools/",
+			"reportFormat" : "csv"
+		}
+	]
+}

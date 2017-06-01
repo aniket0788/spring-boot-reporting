@@ -1,0 +1,376 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyReport",
+	"investorName": "SFG-MECA-2006-2",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Custom_Private_Investor_MECA.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": 
+	[
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Pool ID/Investor Name",
+			"reportColumns":[
+				{
+					"columnName": "PROCESS_DATE",
+					"columnDescription": "This field will contain the last Date of the reporting month",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "Process_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName":"PROCESS_INT",
+					"columnDescription": "This field will contain the last Date of the reporting month as an integer",
+					"columnType": "SQL",
+					"sqlColumnName": "Process_Int",
+					"mapperClassName": "",
+					"calculationMapper": "ReportDateFormatToINT",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName":"LOAN_NBR",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Nbr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "REAL_CLAIM_TYPE",
+					"columnDescription": "This field will contain the Type of the claim created",
+					"columnType": "SQL",
+					"sqlColumnName": "Real_Claim_Type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Initial Claim File Date",
+					"columnDescription": "This field will contain the DATE in which the Initial Claim was filed",
+					"columnType": "SQL",
+					"sqlColumnName": "Initial_Claim_File_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Initial Claim Payment Amount",
+					"columnDescription": "This field will contain the SUM Amount of the latest Initial Claim",
+					"columnType": "SQL",
+					"sqlColumnName": "initial_claim_payment_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Initial Claim Payment Date",
+					"columnDescription": "This field will contain the DATE in which the Initial Claim payment was effective",
+					"columnType": "MAPPED",
+					"sqlColumnName": "initial_claim_payment_date",
+					"mapperClassName": "ReportDateFormatToMMDDYYY",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Supplemental Claim File Date",
+					"columnDescription": "This field will contain the DATE in which the latest Supplemental Claim was filed",
+					"columnType": "SQL",
+					"sqlColumnName": "Sup_Claim_File_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Supplemental Claim Payment Amount",
+					"columnDescription": " This field will contain the SUM Amount of the latest Supplemental Claim",
+					"columnType": "SQL",
+					"sqlColumnName": "sup_claim_pmnt_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Supplemental Claim Payment Date",
+					"columnDescription": " This field will contain the SUM Amount of the latest Supplemental Claim",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "sup_claim_pmnt_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Prepayments",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly UnSchedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Prepayments",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Scheduled Advances",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly Schedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "schedule_advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Unscheduled Advances",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly UnSchedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "unschedule_advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "MIP Accrued",
+					"columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "MIP_accrued",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Servicing Fees Accrued",
+					"columnDescription": "This field will contain the Amount of the Service Fee  (take into consideration any reversals) at the last day of the month",
+					"columnType": "SQL",
+					"sqlColumnName": "service_fee_accrued",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Current Balance",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Current_Balance",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "D&P Appraisal Order Date",
+					"columnDescription": "This field will contain the last Date the last  Due & Payable appraisal order was requested",
+					"columnType": "SQL",
+					"sqlColumnName": "DAP_App_Order_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "D&P UPB",
+					"columnDescription": "This field will contain the last UPB Amount of the loan at the time it became Due & Payable",
+					"columnType": "SQL",
+					"sqlColumnName": "DAP_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "1st legal Completed Date",
+					"columnDescription": "This field will contain the Date in which the 1st legal action was completed against the borrower",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "First_legal_completed_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Foreclosure Sale Date",
+					"columnDescription": "This field will contain the latest Date the confirmed forclosure sale date",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "forclosure_sale_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "3rd Party Sale Date",
+					"columnDescription": "This field will contain the latest Date the 3rd Party sale date",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "Third_party_sale_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Pre-Foreclosure Short Sale Liquidation Date",
+					"columnDescription": "TBD",
+					"columnType": "SQL",
+					"sqlColumnName": "PRE_FCL_SS_Liquid_Dt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "HUD Assignment Date",
+					"columnDescription": "This field will contain the lastest Date the HUD assignment Date",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "hud_assignment_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "Deed Recorded Date",
+					"columnDescription": "This field will contain the lastest Date the Deed was recorded for the loan",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "deed_recorded_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName" : "ABC Claim Flag",
+					"columnDescription": "This field will contain the ABC Claim Flag value",
+					"columnType": "SQL",
+					"sqlColumnName": "ABC_Claim_Flag",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+	
+}

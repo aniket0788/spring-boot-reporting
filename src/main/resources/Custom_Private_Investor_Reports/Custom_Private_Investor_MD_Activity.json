@@ -1,0 +1,296 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyActivityReport",
+	"investorName": "MECA-2011",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Custom_Private_Investor_MD_Activity.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "Month Activity",
+			"reportColumns": [
+				{
+					"columnName": "Pool Name",
+					"columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "Pool_Name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+					"columnType": "SQL",
+					"sqlColumnName": "Investor_Loan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Champion Loan Number",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "Champion_Loan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Name of Borrower",
+					"columnDescription": "This field will contain the Borrower's First Name + Middle Name + Last Name",
+					"columnType": "SQL",
+					"sqlColumnName": "Name_of_Borrower",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DateFunded",
+					"columnDescription": "This field will contain the DATE in which the  Loaan was Funded",
+					"columnType": "SQL",
+					"sqlColumnName": "DateFunded",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DateSold",
+					"columnDescription": "This field will contain the DATE in which the  Loaan was Sold",
+					"columnType": "SQL",
+					"sqlColumnName": "DateSold",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Beginning Balance",
+					"columnDescription": "This field will contain the UPB value of the loan at the beginning of the reporting month (End UPB of the previous month)",
+					"columnType": "SQL",
+					"sqlColumnName": "beginning_balance",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Balance Purchased",
+					"columnDescription": "This field will contain the Balance (UPB) at the time of the loan purchase",
+					"columnType": "SQL",
+					"sqlColumnName": "Balance_Purchased",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "CMA Prior Period Adjustment Principal",
+					"columnDescription": "This field will contain the SUM of any adjustments/non cash write-offs to the principal amount (take into consideration any reversals)",
+					"columnType": "SQL",
+					"sqlColumnName": "CMA_Prior_Period_Adj_Prin",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "CMA Prior Period Adjustment Interest",
+					"columnDescription": "This field will contain the SUM of any adjustments/non-cash write-offs to the interest amount (take into consideration any reversals)",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "CMA Prior Period Adjustment MIP",
+					"columnDescription": "This field will contain the SUM of any adjustments/non-cash write-offs to the MIP amount (take into consideration any reversals)",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "Scheduled Advances",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly Schedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "schedule_advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Unscheduled Advances",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly UnSchedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "unscheduled_advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Prepayments",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly UnSchedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "prepayments",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Servicing Fee",
+					"columnDescription": "This field will contain the SUM Amount of the Monthly UnSchedule Pmt column for the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Servicing_Fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MIP Interest Accrued",
+					"columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "MIP_interest_accrued",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Contractual Interest Accrued",
+					"columnDescription": "This field will contain the SUM Amount of any Interests accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "contr_interest_accrued",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payoff Fees",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs Fees accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "payoff_fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payoff Amount",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs  (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "payoff_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Excess or Shortfall",
+					"columnDescription": "This field will contain the SUM Amount of any Payoffs Excesses or Shortfalls  (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Excess_or_Shortfall",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Ending Balance",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Ending_Balance",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PayoffDate",
+					"columnDescription": "This field will contain the DATE in which the Payoff transaction was effective",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "PayoffDate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Current Interest Rate",
+					"columnDescription": "This field will contain the Current Interest Rate at the last day of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "current_interest_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Status",
+					"columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_status",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+		  ]
+		},
+		{
+			"tabName": "Summary",
+			"reportColumns": [
+				{
+					"columnName": "Notes",
+					"columnType": "There is going to be two notes located at the bottom of the report: * Servicer Credits are credits received on force placed",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

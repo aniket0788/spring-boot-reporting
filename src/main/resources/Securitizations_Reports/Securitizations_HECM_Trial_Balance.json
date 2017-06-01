@@ -1,0 +1,569 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyTrialBalanceReport",
+	"investorName": "Met Scratch and Dent",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Securitizations_HECM_Trial_Balance.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+		"sqlArguments": [
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			},
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Trial Balance",
+			"reportColumns":[
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "Loanno",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Note Rate",
+					"columnDescription": "This field will contain the Current Interest Rate at the last day of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Note_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PRIOR_MONTH_TOTAL_UPB",
+					"columnDescription": "This field will contain the UPB value of the loan at the beginning of the reporting month (End UPB of the previous month)",
+					"columnType": "SQL",
+					"sqlColumnName": "PRIOR_MONTH_TOTAL_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Interest",
+					"columnDescription": "This field will contain the SUM Amount of any Interests accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Interest",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MIP",
+					"columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "MIP",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Service Fee",
+					"columnDescription": "This field will contain the SUM Amount of any Servicing Fee accrued (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Service_fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MONTHLY_SCHEDULED_PAYMENT",
+					"columnDescription": "This field will contain the SUM Amount of any Monthly Shceduled Payments performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "MONTHLY_SCHEDULED_PAYMENT",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PRINCIPAL ADVANCES",
+					"columnDescription": "This field will contain the SUM Amount of any Principal Advances performed (take into consideration any reversals) during the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "Foreclosure/Attorney Fees",
+					"columnDescription": " This field will contain the SUM Amount of any Foreclosure/Attorney Fees performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "foreclosure_attorney_fee",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "SERVICING_ADVACNCES",
+					"columnDescription": "This field will contain the SUM Amount of any Servicing Advances performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "servicing_advances",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PRINCIPAL PAYMENTS",
+					"columnDescription": " This field will contain the SUM Amount of any Principal Payments performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "PRINCIPAL_PAYMENTS",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Paid in Full Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any PIF Proceeds performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Paid_in_Full_Proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Short Sale/3RD Party  Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Short Sale + 3rd party proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "SQL",
+					"sqlColumnName": "short_sale_proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": " REO Sales Proceeds",
+					"columnDescription": " This field will contain the SUM Amount of any REO Sales proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "SQL",
+					"sqlColumnName": "reo_sales_proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Initial Claim Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Initial Claim proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "SQL",
+					"sqlColumnName": "Initial_Claim_Proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Supplemental Claim Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Supplemental Claim proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "SQL",
+					"sqlColumnName": "Supplemental_Claim_Proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Write-offs",
+					"columnDescription": "This field will contain the SUM Amount of any Write-offs accrued  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "CURRENT_TOTAL_UPB",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "CURRENT_TOTAL_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Most Recent Appr Date",
+					"columnDescription": "This field will contain the Date in which the Last Appraisal was performed",
+					"columnType": "SQL",
+					"sqlColumnName": "Most_Recent_Appr_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Most Recent Appr Value",
+					"columnDescription": "This field will contain the Last Appraisal Value associated with a loan during the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Most_Recent_Appr_Value",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Appr Type",
+					"columnDescription": "This field will contain the Last Appraisal Type associated with a loan during the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "Appr_Type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "GOS",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "Remittance Amount",
+					"columnDescription": "This field will contain the SUM Amount of any Liquidation Proceeds + SUM of any Principal Payments performed (take into consideration any reversals) during the reporting month",
+					"columnType": "CALCULATE",
+					"sqlColumnName": "PRINCIPAL_PAYMENTS,Paid_in_Full_Proceeds,short_sale_proceeds,reo_sales_proceeds,Initial_Claim_Proceeds,Supplemental_Claim_Proceeds",
+					"mapperClassName": "",
+					"calculationMapper": "RemittanceAmountCalculator",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Write-Offs Proceeds (Servicing)",
+					"columnDescription": " This field will contain the SUM Amount of any Write-offs proceeds accrued  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Other Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Other Write-offs accrued  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Change Fee",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "REPURCHASE FROM TRUST",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "LARGEST LOAN BALANCE",
+					"columnDescription": "This field will be 0 for all the records in the report EXCEPT for the records which the CURRENT_TOTAL_UPB for is the highest for all the records",
+					"columnType": "CALCULATE",
+					"sqlColumnName": "Loanno,CURRENT_TOTAL_UPB,curr_max_upb_loanno",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PMT STATUS CHANGE",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "0.00"
+				},
+				{
+					"columnName": "Status Description",
+					"columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+					"columnType": "Mapped",
+					"sqlColumnName": "STATUS_DESCRIPTION",
+					"mapperClassName": "LoanStatusCodeMapper",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "CALLED_DUE_DATE",
+					"columnDescription": "This field will contain the  Called Due Date of the loan at the last day of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "CALLED_DUE_DATE",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "UPB at Called Due Dt",
+					"columnDescription": "This field will contain the UPB of the loan at the time the loan became called due",
+					"columnType": "SQL",
+					"sqlColumnName": "CALLED_DUE_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Liquid Status Date",
+					"columnDescription": "This field will contain the DATE in which an Inactive/Paid Off transaction was effective",
+					"columnType": "SQL",
+					"sqlColumnName": "Liquid_Status_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "REO_SALES_PROCEEDS_RECEIVED_DATE",
+					"columnDescription": "This field will contain the DATE in which the REO Sale Proceeds were received",
+					"columnType": "SQL",
+					"sqlColumnName": "REO_received_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Mortgage Loans assigned to the FHA",
+					"columnDescription": "This field will contain the DATE the was assigned to the FHA.The date will be EQUAL to the date in which the loan status = 72",
+					"columnType": "SQL",
+					"sqlColumnName": "mortgage_assigned_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

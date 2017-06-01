@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="75e55b2f-0d55-4199-bd1a-9f5e78613652" activeEnvironment="Default" name="REPORT-ENGINE-sprint7" resourceRoot="${projectDir}" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+   <con:settings/>
+   <con:interface xsi:type="con:RestService" id="5c4b5d6d-6dc3-47f6-9a3b-398aff048527" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8090" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings/>
+      <con:definitionCache/>
+      <con:endpoints>
+         <con:endpoint>http://localhost:8090</con:endpoint>
+      </con:endpoints>
+      <con:resource name="" path="/RM_TXNS_6088088_/MECATASKID" id="875c6d52-56ea-4d28-8ed4-f579eb398f26">
+         <con:settings/>
+         <con:parameters>
+            <con:parameter>
+               <con:name>Accept</con:name>
+               <con:value/>
+               <con:style>HEADER</con:style>
+               <con:default/>
+               <con:description xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+               <con:name>ClientId</con:name>
+               <con:value/>
+               <con:style>HEADER</con:style>
+               <con:default/>
+               <con:description xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+               <con:name>AuthorizationCode</con:name>
+               <con:value/>
+               <con:style>HEADER</con:style>
+               <con:default/>
+               <con:description xsi:nil="true"/>
+            </con:parameter>
+         </con:parameters>
+         <con:method name="" id="bfa27c29-6443-4c68-9faf-6d4dd96d8789" method="POST">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="FAULT">
+               <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+               <con:status>405 500</con:status>
+               <con:params/>
+               <con:element xmlns:csv="http://localhost/RM_TXNS_6088088_/csv">csv:Fault</con:element>
+            </con:representation>
+            <con:representation type="REQUEST">
+               <con:mediaType>application/json</con:mediaType>
+               <con:params/>
+            </con:representation>
+            <con:representation type="RESPONSE">
+               <con:mediaType xsi:nil="true"/>
+               <con:status>0</con:status>
+               <con:params/>
+               <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+               <con:mediaType xsi:nil="true"/>
+               <con:status>0</con:status>
+               <con:params/>
+               <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+               <con:mediaType xsi:nil="true"/>
+               <con:status>0</con:status>
+               <con:params/>
+               <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+               <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+               <con:status>200</con:status>
+               <con:params/>
+               <con:element xmlns:csv="http://localhost/RM_TXNS_6088088_/csv">csv:Response</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="ad15ff9e-e55a-4590-b455-351feb407706" mediaType="application/json" postQueryString="false">
+               <con:settings>
+                  <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+               </con:settings>
+               <con:endpoint>http://localhost:8090</con:endpoint>
+               <con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "01/01/2016",
+	"endDate":"01/31/2017",
+	"deliveryMethod":"LOCALCOPY"
+}</con:request>
+               <con:originalUri>http://localhost/RM_TXNS_6088088_/csv</con:originalUri>
+               <con:credentials>
+                  <con:authType>No Authorization</con:authType>
+               </con:credentials>
+               <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+               <con:jmsPropertyConfig/>
+               <con:parameters>
+                  <con:entry key="AuthorizationCode" value="CHIPAuthCode"/>
+                  <con:entry key="ClientId" value="CHIPClient"/>
+                  <con:entry key="Accept" value="application/json"/>
+               </con:parameters>
+               <con:parameterOrder>
+                  <con:entry>Accept</con:entry>
+                  <con:entry>ClientId</con:entry>
+                  <con:entry>AuthorizationCode</con:entry>
+               </con:parameterOrder>
+            </con:request>
+         </con:method>
+      </con:resource>
+      <con:resource name="" path="/RM_PYMT_CHG_6088088_/MECA2011PYMTCHG/generate" id="d6d70bc5-e392-4df8-8663-d78ed42b7798">
+         <con:settings/>
+         <con:parameters/>
+         <con:method name="" id="586b666b-7b4e-4799-a4e5-b20362e27137" method="POST">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/RM_PYMT_CHG_6088088_/MECA2011PYMTCHG/csv">csv:Response</con:element></con:representation><con:request name="Request 1" id="993365c3-c26c-48c5-853c-e18925cdfe2b" mediaType="application/json" postQueryString="false">
+               <con:settings>
+                  <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+               </con:settings>
+               <con:endpoint>http://localhost:8080</con:endpoint>
+               <con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY"
+}</con:request>
+               <con:originalUri>http://localhost/RM_PYMT_CHG_6088088_/MECA2011PYMTCHG/csv</con:originalUri><con:credentials>
+                  <con:authType>No Authorization</con:authType>
+               </con:credentials>
+               <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+               <con:jmsPropertyConfig/>
+               <con:parameters>
+                  <con:entry key="AuthorizationCode" value="CHIPAuthCode"/>
+                  <con:entry key="ClientId" value="CHIPClient"/>
+                  <con:entry key="Accept" value="application/json"/>
+               </con:parameters>
+               <con:parameterOrder>
+                  <con:entry>Accept</con:entry>
+                  <con:entry>ClientId</con:entry>
+                  <con:entry>AuthorizationCode</con:entry>
+               </con:parameterOrder>
+            </con:request>
+         </con:method>
+      </con:resource>
+      <con:resource name="" path="/RM_Float_6088088_/MECA2011RMFLOAT" id="90a0373b-453a-4efe-83d6-0f739b101e6a">
+         <con:settings/>
+         <con:parameters/>
+         <con:method name="Method 1" id="96ca0f7e-0008-4fe1-ad4f-31a5da79285f" method="POST">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="REQUEST">
+               <con:mediaType>application/json</con:mediaType>
+               <con:params/>
+            </con:representation>
+            <con:representation type="RESPONSE">
+               <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+               <con:status>200</con:status>
+               <con:params/>
+               <con:element xmlns:csv="http://localhost/RM_Float_6088088_/MECA2011RMFLOAT/csv">csv:Response</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="9a26b229-85ff-4fb6-9be8-eab26c7602cc" mediaType="application/json" postQueryString="false">
+               <con:settings>
+                  <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+               </con:settings>
+               <con:endpoint>http://localhost:8090</con:endpoint>
+               <con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "11/01/2016",
+	"endDate":"11/30/2016",
+	"deliveryMethod":"LOCALCOPY"
+}</con:request>
+               <con:originalUri>http://localhost/RM_Float_6088088_/MECA2011RMFLOAT/csv</con:originalUri>
+               <con:credentials>
+                  <con:authType>No Authorization</con:authType>
+               </con:credentials>
+               <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+               <con:jmsPropertyConfig/>
+               <con:parameters>
+                  <con:entry key="AuthorizationCode" value="CHIPAuthCode"/>
+                  <con:entry key="ClientId" value="CHIPClient"/>
+                  <con:entry key="Accept" value="application/json"/>
+               </con:parameters>
+               <con:parameterOrder>
+                  <con:entry>Accept</con:entry>
+                  <con:entry>ClientId</con:entry>
+                  <con:entry>AuthorizationCode</con:entry>
+               </con:parameterOrder>
+            </con:request>
+         </con:method>
+      </con:resource>
+   <con:resource name="csv" path="/MECA2011_RM_MONTHLY_/MECA2011/generate" id="bf28b70b-63f6-4815-8300-c94e7fd09be8"><con:settings/><con:parameters/><con:method name="Method 1" id="701a0d6b-3ad2-42c9-bb99-c552fd59932a" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/MECA2011_RM_MONTHLY_/MECA2011/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="53279ea5-35a0-4400-9d6f-af8d61fd42be" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY"
+}</con:request><con:originalUri>http://localhost/MECA2011_RM_MONTHLY_/MECA2011/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/MECA2011_RM_FINAL_/MECA2011/generate" id="87cecfe8-e0d5-4e90-8ae9-b65e55827568"><con:settings/><con:parameters/><con:method name="Method 1" id="86c35607-728c-4887-9c11-c400d81b224c" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/MECA2011_RM_FINAL_/MECA2011/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:csv="http://localhost/MECA2011_RM_FINAL_/MECA2011/csv">csv:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="dddc7cb6-7775-46d7-81c3-51c9af56a404" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY"
+}</con:request><con:originalUri>http://localhost/MECA2011_RM_FINAL_/MECA2011/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/MECA1/generate" id="5bbfa4d1-2c0d-4f2c-a13b-4343e2ba613b"><con:settings/><con:parameters/><con:method name="Method 1" id="2bc3e4c1-0ea2-4ab9-8e27-1f1d983107dc" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/MECA1/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="e57a4536-f7c8-4196-a1f8-f90060ff946a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/MECA1/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/MD_Activity/generate" id="daed3cd1-caaf-4473-8807-2b80c4b0178a"><con:settings/><con:parameters/><con:method name="Method 1" id="00dc71e4-0e99-4185-aaea-a1aa50a22479" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/Details/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="21510133-b67c-4f03-8679-9e8b71a3b87d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/Details/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/Paid_Off/generate" id="daed3cd1-caaf-4473-8807-2b80c4b0178a"><con:settings/><con:parameters/><con:method name="Method 1" id="00dc71e4-0e99-4185-aaea-a1aa50a22479" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/Details/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/Details/csv">csv:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="21510133-b67c-4f03-8679-9e8b71a3b87d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/Details/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/Month_Activity/generate" id="daed3cd1-caaf-4473-8807-2b80c4b0178a"><con:settings/><con:parameters/><con:method name="Method 1" id="00dc71e4-0e99-4185-aaea-a1aa50a22479" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/Details/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="21510133-b67c-4f03-8679-9e8b71a3b87d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/Details/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/GugLAC/generate" id="daed3cd1-caaf-4473-8807-2b80c4b0178a"><con:settings/><con:parameters/><con:method name="Method 1" id="00dc71e4-0e99-4185-aaea-a1aa50a22479" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/Details/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="21510133-b67c-4f03-8679-9e8b71a3b87d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/Details/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Custom_Private_Investor_/MD_Detail/generate" id="dc4fadc7-d46d-4f80-9a1d-b54c0f699b99"><con:settings/><con:parameters/><con:method name="Method 1" id="ee4dd4e4-554f-48d0-b2e9-32feb5ccdf4c" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Custom_Private_Investor_/SD_Activity/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="a7f2ff31-6941-482f-8963-84de6718766e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Custom_Private_Investor_/SD_Activity/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Private_Investor_/PI_Activity/generate" id="92a9fc3d-3f13-49ad-97a7-8ad406318280"><con:settings/><con:parameters/><con:method name="Method 1" id="2de455c3-6939-4328-a16c-0f120bb24bde" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Private_Investor_/PI_Activity/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="77c7306d-6195-49bf-bac6-f4e481f82b56" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Private_Investor_/PI_Activity/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Private_Investor_/Details/generate" id="b0caff0c-a592-4b4b-9e7f-f644aedce9f5"><con:settings/><con:parameters/><con:method name="Method 1" id="5d12d618-2319-4fc0-b1b0-71966f55bc72" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Private_Investor_Details/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d74480e4-009b-4bba-b166-95effbc73461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Private_Investor_Details/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Pool_Security_/Reconciliation/generate" id="3172dcd3-df2f-405b-a07f-03b75a4e79ea"><con:settings/><con:parameters/><con:method name="Method 1" id="7917d672-b27f-4782-93c0-e77b06e24ba9" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Pool_Security_/Reconciliation/csv">csv:Response</con:element></con:representation><con:request name="Request 1" id="e6389757-2653-47fe-b438-187d735fe7fc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2005",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Pool_Security_/Reconciliation/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Private_Investor_/Paid_Off/generate" id="ead49be3-bd98-4065-b6a5-c95fc60e95af"><con:settings/><con:parameters/><con:method name="Method 1" id="f8bb288f-3d77-4fed-9ca6-70d2f258ef95" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Private_Investor_/Paid_Off/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="ee834565-b983-416b-9e19-0203b6b4ffc4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2014",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Private_Investor_/Paid_Off/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/Everbank_Detail_Activity/generate" id="ac1da900-65d0-4a84-95cc-163b7f52ab5f"><con:settings/><con:parameters/><con:method name="Method 1" id="f66f13c1-fb24-4d33-aa79-860b0575ecd2" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations_/Everbank_Detail_Activity/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d915a579-2087-46f6-ad81-e78348abe264" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations_/Everbank_Detail_Activity/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/HECM_Liquidated_Assigned_Losses/csv" id="333569e9-0345-4cfd-90ea-b9f31238bd04"><con:settings/><con:parameters/><con:method name="Method 1" id="58503b45-0cee-4075-b96c-4510b768b51b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations_/HECM_Liquidated_Assigned_Losses/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="bbffc275-6c72-4d8f-bb1e-02acf1b1a652" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/25/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations_/HECM_Liquidated_Assigned_Losses/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/Everbank_Month_Activity/generate" id="c7ac13ca-d18f-4741-83d4-c0710edac11d"><con:settings/><con:parameters/><con:method name="Method 1" id="2f1b61cd-1248-4c61-b17f-eb388978f7c5" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations/Everbank_Month_Activity/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="2b42dbc3-4a43-4501-8c53-f4c57c23077d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/01/2016",
+	"endDate":"09/10/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations/Everbank_Month_Activity/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Remit_Reimb_/Remittance/generate" id="905e3321-4f51-4824-a072-a0c168b5138d"><con:settings/><con:parameters/><con:method name="Method 1" id="1c514774-9a51-478c-a33a-9512adf3ca0b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Remit_Reimb_/Remittance/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="59c55b0f-0308-466f-acf5-36356a48ce8b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "10/01/2016",
+	"endDate":"10/31/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Remit_Reimb_/Remittance/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Remit_Reimb_/Reimbursement/generate" id="b6e6920a-1699-42fd-9e72-05c840045693"><con:settings/><con:parameters/><con:method name="Method 1" id="3d307990-a901-4959-bf40-198fd3574538" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Remit_Reimb_/Reimbursement/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="ee83f9a7-c449-4c9e-bea0-c3253f66ec51" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/05/2016",
+	"endDate":"09/07/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Remit_Reimb_/Reimbursement/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/Everbank_Paid_Off/generate" id="51fe0802-7746-4e1b-a544-d6ba5aa2ae21"><con:settings/><con:parameters/><con:method name="Method 1" id="2f551b91-4421-4e18-ad4a-05cc8d23fc0f" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations_/Everbank_Paid_Off/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="2b992a47-e38b-4815-9c91-3bb616207a22" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "09/1/2016",
+	"endDate":"09/2/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations_/Everbank_Paid_Off/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/HECM_Losses/csv" id="ba305498-1833-410e-b4f4-832c64b2119f"><con:settings/><con:parameters/><con:method name="Method 1" id="209019cb-a672-4a2a-b0cf-ab6cc9b8b2b8" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations_/HECM_Losses/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="879ce173-34d8-4f93-9bd7-0bd8c758ce29" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "11/01/2012",
+	"endDate":"11/30/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations_/HECM_Losses/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Securitizations_/HECM_Trial_Balance/csv" id="55dcc647-7a9c-4ccc-8bdf-f822e31430b0"><con:settings/><con:parameters/><con:method name="Method 1" id="153ac658-4981-41bc-9b8d-b623a573172c" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Securitizations_/HECM_Trial_Balance/csv">csv:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="637dcad1-53de-4356-805e-20125b405268" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "12/01/2012",
+	"endDate":"12/31/2016",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Securitizations_/HECM_Trial_Balance/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Daily_Transaction_/Unscheduled/generate" id="2813022a-9cfe-4a67-b2b4-8e1d8af2eb95"><con:settings/><con:parameters/><con:method name="Method 1" id="86a2f082-7daa-4986-8ef4-015b62ab4b73" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Daily_Transaction_/Unscheduled/csv">csv:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="a5eb5e3a-1e48-4c95-9125-fe6b86d716be" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "11/01/2015",
+	"endDate":"11/02/2015",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Daily_Transaction_/Unscheduled/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/Daily_Transaction_/CashMgmt/generate" id="af8ebf9f-a4ee-42b4-a26d-76c0f67354cc"><con:settings/><con:parameters/><con:method name="Method 1" id="d42a52c9-eca4-42b5-a128-f2b97b204b4a" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:csv="http://localhost/Daily_Transaction_/CashMgmt/csv">csv:Response</con:element></con:representation><con:request name="Request 1" id="67596692-e375-421a-ba66-44d814a6257b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "11/01/2015",
+	"endDate":"11/02/2015",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Daily_Transaction_/CashMgmt/csv</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="csv" path="/REO_ACCT_MONTHLY_/REOAcctReport/generate" id="aec82afe-4bd9-4e7f-b4a7-7a904df4012b"><con:settings/><con:parameters/><con:method name="Method 1" id="27a621d4-4884-49c3-8b91-7c646a4d6343" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:gen="http://localhost/REO_ACCT_MONTHLY/REOAcctReport/generate">gen:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:gen="http://localhost/REO_ACCT_MONTHLY/REOAcctReport/generate">gen:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="82db1f7c-1144-4c4b-96a9-01a56289e510" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "04/05/2017",
+	"endDate":"04/06/2017",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/REO_ACCT_MONTHLY/REOAcctReport/generate</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="generate" path="/Suspense_Account_/Suspense_Trans/generate" id="b6159030-b5d1-4091-8395-107239a8b291"><con:settings/><con:parameters/><con:method name="Method 1" id="0cbadb45-0ecc-441a-b952-8bd01a7dfbc6" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:gen="http://localhost/Suspense_Account_/Suspense_Trans/generate">gen:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:gen="http://localhost/Suspense_Account_/Suspense_Trans/generate">gen:Fault</con:element></con:representation><con:request name="Request 1" id="7cb01f4f-0e7f-4fa7-8835-b45104feefcc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request>{
+	"reportExportFormat":"CSV",
+	"emailAddress":"raheem.jiwani@nationstarmail.com",
+	"userID":"1SY1",
+	"startDate": "04/05/2017",
+	"endDate":"04/06/2017",
+	"deliveryMethod":"LOCALCOPY",
+	"poolName":"NATION000"
+}</con:request><con:originalUri>http://localhost/Suspense_Account_/Suspense_Trans/generate</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface>
+   <con:properties/>
+   <con:wssContainer/>
+   <con:oAuth2ProfileContainer/>
+</con:soapui-project>

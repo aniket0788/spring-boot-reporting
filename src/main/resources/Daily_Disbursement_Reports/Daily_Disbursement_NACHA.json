@@ -1,0 +1,187 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "NACHAReport",
+	"investorName": "MECA-2011",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Daily_Disbursement_NACHA.sql",
+	"appendPoolNumber": false,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "NoTabNameforTextfile",
+			"reportColumns": [
+				{
+					"columnName": "File_Creation_Time",
+					"columnDescription": " FILE HEADER RECORD ",
+					"columnType": "SQL",
+					"sqlColumnName": "File_Creation_Time",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Company_Description_Date",
+					"columnDescription": "BATCH HEADER RECORDs",
+					"columnType": "SQL",
+					"sqlColumnName": "Company_Description_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Effective_Entry_Date",
+					"columnDescription": "BATCH HEADER RECORDs",
+					"columnType": "SQL",
+					"sqlColumnName": "Effective_Entry_Date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Transaction_Code",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Transaction_Code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Receiving_DFI_ID_NBR",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Receiving_DFI_ID_NBR",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "DFI_Account_Number",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "DFI_Account_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Amount",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Individual_Id_Number",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Individual_Id_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Individual_Payee_name",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Individual_Payee_name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Sequence_Number",
+					"columnDescription": "ENTRY DETAIL RECORDS",
+					"columnType": "SQL",
+					"sqlColumnName": "Sequence_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Entry_or_Addenda_Count",
+					"columnDescription": "BATCH CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Entry_or_Addenda_Count",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Total_Debit_Entry_Dollar_Amt",
+					"columnDescription": "BATCH CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Total_Debit_Entry_Dollar_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Total_Credit_Entry_Dollar_Amt",
+					"columnDescription": "BATCH CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Total_Credit_Entry_Dollar_Amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Block_Count",
+					"columnDescription": "FILE CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Block_Count",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Entry_Count",
+					"columnDescription": "FILE CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Entry_Count",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Total_Debit_Entry_Amount",
+					"columnDescription": "FILE CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Total_Debit_Entry_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Total_Credit_Entry_Amount",
+					"columnDescription": "FILE CONTROL RECORD",
+					"columnType": "SQL",
+					"sqlColumnName": "Total_Credit_Entry_Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+								
+			]
+		}
+	]
+	
+}

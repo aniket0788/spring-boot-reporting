@@ -1,0 +1,215 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyLossesReport",
+	"investorName": "Met Scratch and Dent",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Securitizations_HECM_Losses.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+		"sqlArguments": [
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Losses",
+			"reportColumns":[
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "loanno",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "UPB at Deal",
+					"columnDescription": "This field will contain the UPB Amount at the time the deal was completed",
+					"columnType": "SQL",
+					"sqlColumnName": "UBP_Deal",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Status at Deal",
+					"columnDescription": "This field will contain the Status Description at the time the deal was completed",
+					"columnType": "SQL",
+					"sqlColumnName": "statusDeal",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Accruals",
+					"columnDescription": "This field will contain the SUM Amount of any Accruals  (take into consideration any reversals) during the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Foreclosure/Attorney Fees",
+					"columnDescription": "This field will contain the SUM Amount of any Foreclosure/Attorney Fees performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "attorney_fees",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Servicing Advances",
+					"columnDescription": " This field will contain the SUM Amount of any Servicing Advances performed (take into consideration any reversals) during the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Principal Payments",
+					"columnDescription": " This field will contain the SUM Amount of any Principal Payments performed (take into consideration any reversals) during the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Paid in Full Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Principal Payments performed (take into consideration any reversals) during the reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": " Short Sale/ 3RD Party  Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Short Sale + 3rd party proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": " REO Sales Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any REO Sales proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": " Initial Claim Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Initial Claim proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Supplemental Claim Proceeds",
+					"columnDescription": "This field will contain the SUM Amount of any Supplemental Claim proceeds incurred  (take into consideration any reversals) during the reporting month as per the sell of the asset",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Current UPB",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the previous reporting month",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "UPB",
+					"columnDescription": "This field will contain the UPB value of the loan at the END of the previous reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "UBP",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "UPB Adj",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Funds",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Investor Losses",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Total Losses",
+					"columnDescription": "",
+					"columnType": "HARDCODED",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "NA"
+				},
+				{
+					"columnName": "Claim Type",
+					"columnDescription": "",
+					"columnType": "SQL",
+					"sqlColumnName": "claimtype",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,289 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "DailyDisbursementsReport",
+  "investorName": "",
+  "servicerID": "",
+  "sqlQueryFileName": "Daily_Disbursement_Report.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		}
+	],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "PROCESS DATE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "PROCESS DATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "RECORD INCLUDED",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "RECORD INCLUDED",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "RECORD TYPE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "RECORD TYPE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "LOAN",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "LOAN",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "IDX",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "IDX",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "TRANSACTION STATUS",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "TRANSACTION STATUS",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "PAYMENT TYPE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "PAYMENT TYPE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "PAYMENT TYPE DESC",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "PAYMENT TYPE DESC",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "INVOICE NUMBER",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "INVOICE NUMBER",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "TRAN CREATED DATE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "TRAN CREATED DATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "TRAN POSTED DATE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "TRAN POSTED DATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "AMOUNT",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "AMOUNT",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PAYMENT METHOD",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "PAYMENT METHOD",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "DISBURSEMENT_DATE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "DISBURSEMENT_DATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "CHECK NUMBER",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "CHECK NUMBER",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "PAYEE NAME",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "PAYEE NAME",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "MAIL TO STREET",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "MAIL TO STREET",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "MAIL TO CITY",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "MAIL TO CITY",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "MAIL TO STATE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "MAIL TO STATE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "MAIL TO ZIP",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "MAIL TO ZIP",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "ACH NUMBER",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "ACH NUMBER",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "DEPOSIT BANK NAME",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "DEPOSIT BANK NAME",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "DEPOSIT BANK ACNT NO",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "DEPOSIT BANK ACNT NO",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "DEPOSIT_BANK_ROUT_NO",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "DEPOSIT_BANK_ROUT_NO",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "ACCT TYPE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "ACCT TYPE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        },
+        {
+          "columnName": "NOTE",
+          "columnDescription": "",
+          "columnType": "SQL",
+          "sqlColumnName": "NOTE",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+
+        }
+      ]
+    }
+  ]
+}

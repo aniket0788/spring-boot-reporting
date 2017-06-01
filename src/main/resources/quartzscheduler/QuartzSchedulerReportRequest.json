@@ -1,0 +1,486 @@
+{
+	"Private_Investor_PI_Activity_JOB": [
+		{
+			"reportName": "Private_Investor_",
+			"taskId": "PI_Activity",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EB1001150,EB0513HF0,EB0522HF0,EB0529HF0,EB0529P00,LBHI00000,UBS010607",
+			"jobIdentityKey": "PrivateInvestorPIActivityJOB",
+			"jobDescription": "It is a monthly report for Private_Investor_PI_Activity.",
+			"jobGroup": "PrivateInvestor",
+			"triggerIdentityKey": "PrivateInvestorPIActivityTRG",
+			"startAt": 0,
+			"cronSchedule": "0 0 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Private_Investor_Details_JOB": [
+		{
+			"reportName": "Private_Investor_",
+			"taskId": "Details",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EB1001150,EB0513HF0,EB0522HF0,EB0529HF0,EB0529P00,LBHI00000,UBS010607",
+			"jobIdentityKey": "PrivateInvestorDetailsJOB",
+			"jobDescription": "It is a monthly report for Private_Investor_Details.",
+			"jobGroup": "PrivateInvestor",
+			"triggerIdentityKey": "PrivateInvestorDetailsTRG",
+			"startAt": 0,
+			"cronSchedule": "0 10 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Private_Investor_Paid_Off_JOB": [
+		{
+			"reportName": "Private_Investor_",
+			"taskId": "Paid_Off",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EB1001150,EB0513HF0,EB0522HF0,EB0529HF0,EB0529P00,LBHI00000,UBS010607",
+			"jobIdentityKey": "PrivateInvestorPaidOffJOB",
+			"jobDescription": "It is a monthly report for Private_Investor_Paid_Off.",
+			"jobGroup": "PrivateInvestor",
+			"triggerIdentityKey": "PrivateInvestorPaidOffTRG",
+			"startAt": 0,
+			"cronSchedule": "0 20 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_GUG_LAC_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "GugLAC",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "GUGLAC000,IVCOTRUST",
+			"jobIdentityKey": "CustomPrivateInvestorGugLACJOB",
+			"jobDescription": "It is a monthly GugLAC report for custom private investor details.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorGugLACTRG",
+			"startAt": 0,
+			"cronSchedule": "0 30 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_MECA1_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "MECA",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20061,MECA20062,MECA20063",
+			"jobIdentityKey": "CustomPrivateInvestorMECA1JOB",
+			"jobDescription": "It is a monthly report for custom private investor details.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorMECA1TRG",
+			"startAt": 0,
+			"cronSchedule": "0 40 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_Paid_Off_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "Paid_Off",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "METSCRDEN",
+			"jobIdentityKey": "CustomPrivateInvestorPaidOffJOB",
+			"jobDescription": "It is a monthly Paid Off report for custom private investor details.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorPaidOffTRG",
+			"startAt": 0,
+			"cronSchedule": "0 50 1 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_MD_DETAILS_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "MD_Detail",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "METSCRDEN",
+			"jobIdentityKey": "CustomPrivateInvestorMDDetailsJOB",
+			"jobDescription": "It is a monthly report for custom private investor details.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorMDDetailsTRG",
+			"startAt": 0,
+			"cronSchedule": "0 0 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_MONTHLY_ACTIVITY_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "MD_Activity", 
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "METSCRDEN",
+			"jobIdentityKey": "CustomPrivateInvestorMonthlyActivityJOB",
+			"jobDescription": "It is a monthly Activity report for custom private investor details.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorMonthlyActivityTRG",
+			"startAt": 0,
+			"cronSchedule": "0 10 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Daily_Transaction_Unscheduled_JOB": [
+		{
+			"reportName": "Daily_Transaction_",
+			"taskId": "Unscheduled",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EVERB2015,EB1001150,EB0513HF0,EB0522HF0,EB0529HF0,EB0529P00,LBHI00000,UBS010607,METSCRDEN,MECA20061,MECA20062,MECA20063,GUGLAC000,IVCOTRUST,FNMA00000,HECM20151,HECM20152,HECM20161,HECM20162,HECM20163,CRDSUISSE",
+			"jobIdentityKey": "DailyTransactionUnscheduledJOB",
+			"jobDescription": "It is a Daily report for Daily_Transaction_Unscheduled.",
+			"jobGroup": "DailyTransaction",
+			"triggerIdentityKey": "DailyTransactionUnscheduledTRG",
+			"startAt": 0,
+			"cronSchedule": "0 30 2 ? * MON-FRI",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "dailyScheduler"
+		}
+	],
+	"Daily_Transaction_CashMgmt_JOB": [
+		{
+			"reportName": "Daily_Transaction_",
+			"taskId": "CashMgmt",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "",
+			"jobIdentityKey": "DailyTransactionCashMgmtJOB",
+			"jobDescription": "It is a Daily report for Daily_Transaction_CashMgmt.",
+			"jobGroup": "DailyTransaction",
+			"triggerIdentityKey": "DailyTransactionCashMgmtTRG",
+			"startAt": 0,
+			"cronSchedule": "0 20 2 ? * MON-FRI",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "dailyScheduler"
+		}
+	],
+  
+	"Securitizations_HECM_Trial_Balance_JOB": [
+		{
+			"reportName": "Securitizations_",
+			"taskId": "HECM_Trial_Balance",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EVERB2015",
+			"jobIdentityKey": "Securitizations_HECM_Trial_BalanceJOB",
+			"jobDescription": "It is a monthly report for Securitizations_HECM_Trial_Balance.",
+			"jobGroup": "Securitizations",
+			"triggerIdentityKey": "Securitizations_HECM_Trial_BalanceTRG",
+			"startAt": 0,
+			"cronSchedule": "0 40 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": true,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Securitizations_Everbank_Detail_Activity_JOB": [
+		{
+			"reportName": "Securitizations_",
+			"taskId": "Everbank_Detail_Activity",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EVERB2015",
+			"jobIdentityKey": "Securitizations_Everbank_Detail_ActivityJOB",
+			"jobDescription": "It is a monthly report for Securitizations_Everbank_Detail_Activity.",
+			"jobGroup": "Securitizations",
+			"triggerIdentityKey": "Securitizations_Everbank_Detail_ActivityTRG",
+			"startAt": 0,
+			"cronSchedule": "0 45 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Securitizations_Everbank_Month_Activity_JOB": [
+		{
+			"reportName": "Securitizations_",
+			"taskId": "Everbank_Month_Activity",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EVERB2015",
+			"jobIdentityKey": "Securitizations_Everbank_Month_ActivityJOB",
+			"jobDescription": "It is a monthly report for Securitizations_Everbank_Month_Activity.",
+			"jobGroup": "Securitizations",
+			"triggerIdentityKey": "Securitizations_Everbank_Month_ActivityTRG",
+			"startAt": 0,
+			"cronSchedule": "0 50 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Securitizations_Everbank_Paid_Off_JOB": [
+		{
+			"reportName": "Securitizations_",
+			"taskId": "Everbank_Paid_Off",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "EVERB2015",
+			"jobIdentityKey": "Securitizations_Everbank_Paid_OffJOB",
+			"jobDescription": "It is a monthly report for Securitizations_Everbank_Paid_Off.",
+			"jobGroup": "Securitizations",
+			"triggerIdentityKey": "Securitizations_Everbank_Paid_OffTRG",
+			"startAt": 0,
+			"cronSchedule": "0 55 2 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"Daily_Disbursement_Check_JOB": [
+		{
+			"reportName": "Daily_Disbursement_",
+			"taskId": "Check,CHKACH,NACHA",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "XML,CSV,TXT",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "",
+			"jobIdentityKey": "Daily_Disbursement_ReportsJOB",
+			"jobDescription": "It is a daily report for Daily_Disbursements",
+			"jobGroup": "Daily_Disbursement",
+			"triggerIdentityKey": "Daily_Disbursement_ReportTRG",
+			"startAt": 0,
+			"cronSchedule": "0 0 3 ? * MON-FRI",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "disbursementScheduler"
+		}
+	],
+	"MECA2011_Balances_and_Interest_Rate_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "Balances_and_Interest_Rate",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_Balances_and_Interest_RateJOB",
+			"jobDescription": "It is a monthly report for MECA2011_Balances_and_Interest_Rate.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_Balances_and_Interest_RateTRG",
+			"startAt": 0,
+			"cronSchedule": "0 5 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"MECA2011_Loan_Change_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "Loan_Change",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_Loan_ChangeJOB",
+			"jobDescription": "It is a monthly report for MECA2011_Loan_Change.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_Loan_ChangeTRG",
+			"startAt": 0,
+			"cronSchedule": "0 7 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"MECA2011_Payment_Change_Plan_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "Payment_Change_Plan",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_Payment_Change_PlanJOB",
+			"jobDescription": "It is a monthly report for MECA2011_Payment_Change_Plan.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_Payment_Change_PlanTRG",
+			"startAt": 0,
+			"cronSchedule": "0 9 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"MECA2011_RM_Final_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "RM_Final",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_RM_FinalJOB",
+			"jobDescription": "It is a monthly report for MECA2011_RM_Final.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_RM_FinalTRG",
+			"startAt": 0,
+			"cronSchedule": "0 11 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"MECA2011_RM_Float_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "RM_Float",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_RM_FloatJOB",
+			"jobDescription": "It is a monthly report for MECA2011_RM_Float.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_RM_FloatTRG",
+			"startAt": 0,
+			"cronSchedule": "0 13 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"MECA2011_Servicing_Transaction_JOB": [
+		{
+			"reportName": "MECA2011_",
+			"taskId": "Servicing_Transaction",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "MECA20110",
+			"jobIdentityKey": "MECA2011_Servicing_TransactionJOB",
+			"jobDescription": "It is a monthly report for MECA2011_Servicing_Transaction.",
+			"jobGroup": "MECA2011",
+			"triggerIdentityKey": "MECA2011_Servicing_TransactionTRG",
+			"startAt": 0,
+			"cronSchedule": "0 15 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"REOACCTReport": [
+		{
+			"reportName": "reo_acct_",
+			"taskId": "reoacctreport",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "",
+			"jobIdentityKey": "reo_acct_reoacctreportJOB",
+			"jobDescription": "This report will contains the REO information",
+			"jobGroup": "REO ACCT",
+			"triggerIdentityKey": "reo_acct_reoacctreportJOB",
+			"startAt":0,
+			"cronSchedule": "0 18 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	],
+	"CPI_MONTHLY_ACTIVITY_AllPools_JOB": [
+		{
+			"reportName": "Custom_Private_Investor_",
+			"taskId": "MD_Activity_AllPools",
+			"deliveryMethod": "LOCALCOPY",
+			"reportExportFormat": "CSV",
+			"emailAddress": "raheem.jiwani@nationstarmail.com",
+			"userID": "1SY1",
+			"poolName": "",
+			"jobIdentityKey": "CustomPrivateInvestorMonthlyActivityAllPoolsJOB",
+			"jobDescription": "It is a monthly Activity report for custom private investor details all pools.",
+			"jobGroup": "CustomPrivateInvestor",
+			"triggerIdentityKey": "CustomPrivateInvestorMonthlyActivityAllPoolsTRG",
+			"startAt": 0,
+			"cronSchedule": "0 20 3 1 * ?",
+			"overwrite": true,
+			"durable": true,
+			"remove": false,
+			"schedulerJobType": "monthlyScheduler"
+		}
+	]
+}

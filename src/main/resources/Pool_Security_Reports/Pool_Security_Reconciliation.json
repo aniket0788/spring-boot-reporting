@@ -1,0 +1,91 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "Champion_PAR_SAR Recon",
+	"investorName": "MECA-2006-2",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Pool_Security_Reconciliation.sql",
+	"appendPoolNumber": false,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper": "StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper": "EndDateArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "EOM Date",
+					"columnDescription": "This field will contain the LAST DATE of the reporting month",
+					"columnType": "CALCULATE",
+					"sqlColumnName": "",
+					"mapperClassName": "",
+					"calculationMapper": "ReportDateFormatToMMDDYYY",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PAR Pool Number",
+					"columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "PAR_Pool_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "PAR Participation UPB",
+					"columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+					"columnType": "SQL",
+					"sqlColumnName": "PAR_Participation_UPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "SAR Pool Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+					"columnType": "SQL",
+					"sqlColumnName": "SAR_Pool_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "SAR Security_Ending_RPB",
+					"columnDescription": "This field will contain the unique FHA Case Number assigned to each loan by our investor",
+					"columnType": "SQL",
+					"sqlColumnName": "Sar_Security_Ending_RPB",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Diff",
+					"columnDescription": "This field will contain the Difference between the PAR Participation UPB value & SAR_Security_Ending_RPB value",
+					"columnType": "CALCULATE",
+					"sqlColumnName": "PAR_Participation_UPB,Sar_Security_Ending_RPB",
+					"mapperClassName": "",
+					"calculationMapper": "DifferrenceCalculator",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

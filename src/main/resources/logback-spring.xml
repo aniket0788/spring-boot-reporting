@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	  <appender name="ROLLIN" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+	 	 <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+       	 </encoder> 		
+    	 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+          <!-- daily rollover -->
+          <fileNamePattern>${LOG_FILE}_%d{yyyy-MM-dd}.log</fileNamePattern>
+          <maxHistory>30</maxHistory>
+			<!-- Perform purge at app start (for apps with short life cycle which don't trigger log rotation) -->
+		  <cleanHistoryOnStart>true</cleanHistoryOnStart>
+   	      </rollingPolicy>
+ 	 </appender>
+	
+	<logger name="com.nationstar.reportengine" level="DEBUG" />
+	<springProfile name="QA">
+		<logger name="com.nationstar.reportengine" level="TRACE">
+		 <appender-ref ref="ROLLIN" />
+		 </logger>
+	</springProfile>
+	<springProfile name="UAT">
+		<logger name="com.nationstar.reportengine" level="DEBUG" >
+		 <appender-ref ref="ROLLIN" />
+		 </logger>
+	</springProfile>
+	<springProfile name="TRAN">
+		<logger name="com.nationstar.reportengine" level="DEBUG" >
+		 <appender-ref ref="ROLLIN" />
+		 </logger>
+	</springProfile>
+	<springProfile name="PROD">
+		<logger name="com.nationstar.reportengine" level="DEBUG" >
+		 <appender-ref ref="ROLLIN" />
+		 </logger>
+	</springProfile>
+	<springProfile name="local">
+		<logger name="com.nationstar.reportengine" level="DEBUG" >
+		 <appender-ref ref="ROLLIN" />
+		 </logger>
+	</springProfile>
+</configuration>

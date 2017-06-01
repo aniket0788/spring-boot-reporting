@@ -1,0 +1,104 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "ACCTING_REO",
+  "investorName": "",
+  "servicerID": "",
+  "sqlQueryFileName": "reo_acct_reoacctreport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": " ",
+  "isMonthlyReport": false,
+  "appendProcessingDate":true,
+  "appendReportingMonth": "MM-dd-yy",
+  "sqlArguments": [],
+  "reportTabs":[
+    {
+      "tabName": "REO Acct. Report",
+      "reportColumns": [
+        {
+          "columnName": "LOAD_DATE",
+          "columnDescription": "This field will contain the End date provided in the CHIP screen",
+          "columnType": "CALCULATE",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "EndDateCalculator",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PROCESS_DATE",
+          "columnDescription": "This field will contain one day prior to LOAD_DATE",
+          "columnType": "Calculate",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "ReportingMonthProcessDateCalculator",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "LOAN_NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_num",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CLIENT_LOAN_NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+          "columnType": "SQL",
+          "sqlColumnName": "client_loan_nbr",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "FHA_CASE_NBR",
+          "columnDescription": "This field will contain the unique FHA Case Number assigned to each loan by our investo",
+          "columnType": "SQL",
+          "sqlColumnName": "FHA_CASE_NBR",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "POOL_NAME",
+          "columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "pool_name",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "STATUS_CODE",
+          "columnDescription": "This field will contain the Status Code of the loan at the LAST DAY of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "N/A"
+        },
+        {
+          "columnName": "STATUS_DESCRIPTION",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the LAST DAY of the reporting month",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CURRENT_TOTAL_UPB",
+          "columnDescription": "This field will contain the Amount of the Current Total UPB for the current reporting month at the last day of the month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_total_upb",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        }
+      ]
+    }
+  ]
+  }

@@ -1,0 +1,190 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "RM_PYMT_CHG",
+	"investorName": "MECA-2011",
+	"servicerID": "268800000",
+	"sqlQueryFileName": "MECA2011_Payment_Change_Plan.sql",
+	"appendPoolNumber": false,
+	"appendVersion": true,
+	"appendInvestorName": false,
+	"appendServicerId": true,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMM",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "Transaction Designator",
+					"columnDescription": "Defines the nature of transacton, in this case - Payment change",
+					"columnType": "SQL",
+					"sqlColumnName": "transaction_designator",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": 4
+				},
+				{
+					"columnName": "Fannie Mae Loan Number",
+					"columnDescription": "Fannie mae loan number",
+					"columnType": "SQL",
+					"sqlColumnName": "fannie_mae_loan_number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Servicer Number",
+					"columnDescription": "servicer_number",
+					"columnType": "SQL",
+					"sqlColumnName": "servicer_number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Report Period",
+					"columnDescription": "Reporting Period , last month in YYYYMM",
+					"columnType": "SQL",
+					"sqlColumnName": "report_period",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Effective Date ",
+					"columnDescription": "This is the post date column",
+					"columnType": "SQL",
+					"sqlColumnName": "effective_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payment Plan",
+					"columnDescription": "Calculate payment plan",
+					"columnType": "SQL",
+					"sqlColumnName": "payment_plan",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Schedule Payment",
+					"columnDescription": "The amount of the principal and/or interest payment due on the loan for each installment",
+					"columnType": "SQL",
+					"sqlColumnName": "schedule_payment",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Term",
+					"columnDescription": "Remaining Number of Months for the Scheduled payments to be paid at the end of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "term",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Line of Credit Reserve Amount",
+					"columnDescription": "This will display the LOC Reserve amount",
+					"columnType": "SQL",
+					"sqlColumnName": "line_of_credit_reserve_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Monthly Taxes and Insurance withholding amount",
+					"columnDescription": "The dollar amount of funds from a reverse loan",
+					"columnType": "SQL",
+					"sqlColumnName": "insurance_withholding_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Monthly Taxes and Insurance withholding percent",
+					"columnDescription": "The tax and insurance withholding amount as a percentage",
+					"columnType": "SQL",
+					"sqlColumnName": "insurance_withholding_percent",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Withholding From Date",
+					"columnDescription": "Date to start withholding tax and insurance",
+					"columnType": "SQL",
+					"sqlColumnName": "withholding_from_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Withholding To Date",
+					"columnDescription": "Date to stop withholding tax and insurance",
+					"columnType": "SQL",
+					"sqlColumnName": "withholding_to_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		},
+		{
+			"tabName": "Tab2",
+			"reportColumns": [
+				{
+					"columnName": "Transaction Designator",
+					"columnDescription": "This is the description of this column",
+					"columnType": "Mapped",
+					"sqlColumnName": "PAY_TYPE, ACTION_CODE",
+					"mapperClassName": "TransactionDesignatorMapper",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Amount",
+					"columnType": "SQL",
+					"sqlColumnName": "Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,223 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "checkReport",
+	"investorName": "MECA-2011",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Daily_Disbursement_Check.sql",
+	"appendPoolNumber": false,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "NoTabNameforXML",
+			"reportColumns": [
+				{
+					"columnName": "Client ID",
+					"columnDescription": " This Client ID will be automatically populated everytime the process runs with a new GUID information or it can be hardcoded to any value the dev team wants it to be since it will not affect TRIMS consumption process",
+					"columnType": "SQL",
+					"sqlColumnName": "client_id",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Client Transaction Reference Number",
+					"columnDescription": "This Client Transaction Reference Number it�s a refernce number which can later be use to refer a transaction in TRIMS.This value will be equal to the Check Number being created in this process which is automatically assign",
+					"columnType": "SQL",
+					"sqlColumnName": "client_trans_ref_nbr",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Transaction Type",
+					"columnDescription": "This Transaction Type value will be equal to CHECK",
+					"columnType": "SQL",
+					"sqlColumnName": "transaction_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Debit Account Number",
+					"columnDescription": "This Debit Account Number value will be equal to 826195385",
+					"columnType": "SQL",
+					"sqlColumnName": "debit_account_number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Debit Routing Number",
+					"columnDescription": "This Debit Routing Number value will be equal to 111300880",
+					"columnType": "SQL",
+					"sqlColumnName": "debit_routing_number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Amount",
+					"columnDescription": "This Amount value will be equal to the SUM amount of all the Payment Stubs remit amounts",
+					"columnType": "SQL",
+					"sqlColumnName": "amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Check Date",
+					"columnDescription": "This Check Date value will be equal to the date for which the file is created",
+					"columnType": "SQL",
+					"sqlColumnName": "check_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Check Number",
+					"columnDescription": "This Check Number value will be unique & automatically inputed by the system starting from last check number use + 1.Check Number must be unique for the bank & be a max of 10 digits numeric",
+					"columnType": "SQL",
+					"sqlColumnName": "check_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Delivery Method",
+					"columnDescription": "This Delivery Method value = '0000'",
+					"columnType": "SQL",
+					"sqlColumnName": "delivery_method",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Form Code",
+					"columnDescription": "This Form Code value = 'A2'",
+					"columnType": "SQL",
+					"sqlColumnName": "form_code",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payee Name",
+					"columnDescription": "This Payee Name value will either consist of the name of our customer OR the name of the service provider",
+					"columnType": "SQL",
+					"sqlColumnName": "payee_name",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payee Street",
+					"columnDescription": "This field will contain the SUM Amount of any Interests accrued (take into consideration any reversals) since the loan originated",
+					"columnType": "SQL",
+					"sqlColumnName": "payee_street",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payee Town",
+					"columnDescription": "This Payee Town value will either consist of the mailing city of our customer OR the mailing city of the service provider",
+					"columnType": "SQL",
+					"sqlColumnName": "payee_town",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payee State",
+					"columnDescription": "This Payee State value will either consist of the mailing state of our customer OR the mailing state of the service provider",
+					"columnType": "SQL",
+					"sqlColumnName": "payee_state",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Payee Zip",
+					"columnDescription": "This Payee Zip value will either consist of the mailing zip of our customer OR the mailing zip of the service provider",
+					"columnType": "SQL",
+					"sqlColumnName": "payee_zip",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Remittance Info",
+					"columnDescription": "If the payment is to a customer (Tran = 44, P00) than this value will be NULL.If the payment is to a Vendor (41/45/90's/Corp Adv.) than the loan number will be display in this field",
+					"columnType": "SQL",
+					"sqlColumnName": "ch_remittance_info",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Document Date",
+					"columnDescription": "This Document Date value will consist of the date in which the payment(s)/invoice(s) was posted",
+					"columnType": "SQL",
+					"sqlColumnName": "document_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Number",
+					"columnDescription": "This Number value will consist of the Invoice Number coming from our system of records",
+					"columnType": "SQL",
+					"sqlColumnName": "invoice_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Remittance Info",
+					"columnDescription": "If the payment is to a customer (Tran = 44, P00) than this value will be NULL.If the payment is to a Vendor (41/45/90's/Corp Adv.) than the loan number will be display in this field",
+					"columnType": "SQL",
+					"sqlColumnName": "remittance_info",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Remit Amount",
+					"columnDescription": "This Remit Amount value will consist of the amount of the payment(s)/invoice(s) posted",
+					"columnType": "SQL",
+					"sqlColumnName": "remit_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Remit Pay Type",
+					"columnDescription": "This Remit Pay Type will consists of transaction codes of the transactions posted",
+					"columnType": "SQL",
+					"sqlColumnName": "remit_pay_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+				
+			]
+		}
+	]
+	
+}

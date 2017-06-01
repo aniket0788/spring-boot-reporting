@@ -1,0 +1,60 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "ChampionSuspensesReport",
+  "investorName": "",
+  "servicerID": "268800000",
+  "sqlQueryFileName": "suspense_account_suspensetransreport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": false,
+  "appendProcessingDate":true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [],
+  "reportTabs":[
+    {
+      "tabName": "ChampionSuspensesReport",
+      "reportColumns": [
+        {
+          "columnName": "Loan Number",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_number"
+        },
+        {
+          "columnName": "Investor Number",
+          "columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+          "columnType": "SQL",
+          "sqlColumnName": "investor_code"
+        },
+        {
+          "columnName": "Pool Name",
+          "columnDescription": "This field will contain the unique Pool Name assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "pool_name"
+        },
+        {
+          "columnName": "Loan Status",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "LoanStatusCodeMapper"
+        },
+        {
+          "columnName": "Suspense Balance",
+          "columnDescription": " This field will contain the SUSPENSE balance of the loan at the end of the reporting day",
+          "columnType": "SQL",
+          "sqlColumnName": "suspense_balance"
+        },
+        {
+          "columnName": "Trans Status code",
+          "columnDescription": " This field will contain the Trans Status codey",
+          "columnType": "SQL",
+          "sqlColumnName": "trans_code"
+        }
+      ]
+    }
+  ]
+}

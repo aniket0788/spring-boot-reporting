@@ -1,0 +1,251 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "RM_MTHLY",
+	"investorName": "MECA-2011",
+	"servicerID": "268800000",
+	"sqlQueryFileName": "MECA2011_Balances_and_Interest_Rate.sql",
+	"appendPoolNumber": false,
+	"appendVersion": true,
+	"appendInvestorName": false,
+	"appendServicerId": true,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMM",
+	"sqlArguments": [
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "startDate",
+			"argumentValue": "",
+			"argumentMapper":"StartDateArgumentMapper"
+		},
+		{
+			"argumentType": "Date",
+			"argumentFormat": "yyyy-MM-dd",
+			"argumentName": "endDate",
+			"argumentValue": "",
+			"argumentMapper":"EndDateArgumentMapper"
+		},
+		{
+			"argumentType": "String",
+			"argumentFormat": "",
+			"argumentName": "poolName",
+			"argumentValue": "",
+			"argumentMapper":"PoolNameArgumentMapper"
+		}
+	],
+	"reportTabs": [
+		{
+			"tabName": "MM.DD.YY",
+			"reportColumns": [
+				{
+					"columnName": "Report Period",
+					"columnDescription": "Current Accounting Period.",
+					"columnType": "SQL",
+					"sqlColumnName": "report_period",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Fannie Mae Loan Number",
+					"columnDescription": "The unique number assigned to each loan by Fannie Mae",
+					"columnType": "SQL",
+					"sqlColumnName": "fannie_mae_loan_no",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Balance Current Amount",
+					"columnDescription": "Unpaid principal balance at the end of the month - the ending point for the snapshot",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_balance_current_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Scheduled Payment Amount",
+					"columnDescription": "The amount of the principal and/or interest payment due on the loan for each installment ",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_scheduled_payment_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Servicing Fee Set Aside Current Amount",
+					"columnDescription": "Dollar amount set aside to cover servicing fee for reverse mortgage",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_serv_fee_aside_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Repairs Set Aside Current Amount",
+					"columnDescription": "The current dollar amount of funds from a reverse loan that is set aside to cover the cost of repairs to the property",
+					"columnType": "SQL",
+					"sqlColumnName": "repairs_set_aside_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "First Year Property Set Aside Current Amount",
+					"columnDescription": "The current dollar amount of funds from a loan that is set aside to cover property expenses during the first year of the loan",
+					"columnType": "SQL",
+					"sqlColumnName": "fy_prop_set_aside_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				
+				
+				{
+					"columnName": "Current Taxes and Insurance Withheld Balance Amount",
+					"columnDescription": "Current Balance Amount withheld for Taxes and Insurance",
+					"columnType": "SQL",
+					"sqlColumnName": "cur_tax_insu_withheld_bal_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				},
+				{
+					"columnName": "Tax and Insurance Set Aside Current Amount",
+					"columnDescription": "Amount of funds set aside to pay tax and insurance. If the current reporting period is open, this amount is as of the current date",
+					"columnType": "SQL",
+					"sqlColumnName": "tax_insu_set_aside_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Principal Limit Current Amount",
+					"columnDescription": "The total borrowing power available to the borrower for a reverse mortgage product as of the current date",
+					"columnType": "SQL",
+					"sqlColumnName": "principal_limit_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Net Principal Limit Current Amount",
+					"columnDescription": "The amount of money available to the borrower at of current date. Equal to the principal limit less",
+					"columnType": "SQL",
+					"sqlColumnName": "net_principal_limit_cur_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Line of Credit Reserve Current Amount",
+					"columnDescription": "The amount available to the borrower form his or her line of credit at the end of the current reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "loc_reserve_curr_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Net Line of Credit Reserve Current Amount",
+					"columnDescription": "The net amount available to the borrower from his or her line of credit at the end of the current reporting month.The Net Line of Credit is equal to the Loan Original Line of Credit Amount less any draws, repair and firt year property charges or set-asides",
+					"columnType": "SQL",
+					"sqlColumnName": "net_loc_reserve_cur_amt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "MIP Amount",
+					"columnDescription": "The amount of Mortgage Insurance Premium calculated on the loan for current month",
+					"columnType": "SQL",
+					"sqlColumnName": "mip_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Interest Amount",
+					"columnDescription": "The amount of Interest calculated on the loan for current month",
+					"columnType": "SQL",
+					"sqlColumnName": "interest_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Current Index Rate",
+					"columnDescription": "The value of the published financial index that was used as the basis to compute the interest rate for the loan",
+					"columnType": "SQL",
+					"sqlColumnName": "loan_curr_index_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Current Interest Rate",
+					"columnDescription": "Rate that is used to calculate the borrower's interest amount for his or her current payment amount. Since interest is calculated in arrears, it is the rate that is used to accrue interest in the prior month (or cycle)",
+					"columnType": "SQL",
+					"sqlColumnName": "current_interest_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Next Interest Rate",
+					"columnDescription": "Interest Rate after calculating Rate Change",
+					"columnType": "SQL",
+					"sqlColumnName": "next_interest_rate",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Loan Note Rate Next Scheduled Change Date",
+					"columnDescription": "The next date a rate change may occur. Applies to variable rate loans such as Adjustable Rate (ARM), Graduated Payment Adjustable Rate (GPARM) and Step Rate",
+					"columnType": "SQL",
+					"sqlColumnName": "Ln_Note_Rate_Nxt_Schd_Chng_Dt",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Remaining Term for Scheduled Payments",
+					"columnDescription": "Remaining Number of Months for the Scheduled Payments to be paid at the end of the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "remaining_term_sched_payments",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+				
+		  ]
+		},
+		{
+			"tabName": "Tab2",
+			"reportColumns": [
+				{
+					"columnName": "Transaction Designator",
+					"columnDescription": "This is the description of this column",
+					"columnType": "Mapped",
+					"sqlColumnName": "PAY_TYPE, ACTION_CODE",
+					"mapperClassName": "TransactionDesignatorMapper",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Amount",
+					"columnType": "SQL",
+					"sqlColumnName": "Amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				}
+			]
+		}
+	]
+}

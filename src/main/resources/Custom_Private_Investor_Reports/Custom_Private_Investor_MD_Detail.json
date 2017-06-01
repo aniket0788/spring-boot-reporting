@@ -1,0 +1,188 @@
+{
+	"reportPath": "MECAREPORTS\\",
+	"reportFileName": "ChampionMonthlyDetailReport",
+	"investorName": "Met Scratch and Dent",
+	"servicerID": "6081011",
+	"sqlQueryFileName": "Custom_Private_Investor_MD_Detail.sql",
+	"appendPoolNumber": true,
+	"appendVersion": false,
+	"appendInvestorName": false,
+	"appendServicerId": false,
+	"fileNameSeparator": "_",
+	"isMonthlyReport": true,
+	"appendReportingMonth": "YYYYMMDD",
+		"sqlArguments": [
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "startDate",
+				"argumentValue": "",
+				"argumentMapper":"StartDateArgumentMapper"
+			},
+			{
+				"argumentType": "Date",
+				"argumentFormat": "yyyy-MM-dd",
+				"argumentName": "endDate",
+				"argumentValue": "",
+				"argumentMapper":"EndDateArgumentMapper"
+			},
+			{
+				"argumentType": "String",
+				"argumentFormat": "",
+				"argumentName": "poolName",
+				"argumentValue": "",
+				"argumentMapper":"PoolNameArgumentMapper"
+			}
+	],
+	"reportTabs":[
+		{
+			"tabName": "Detail Activity",
+			"reportColumns":[
+				{
+					"columnName": "Loan Number",
+					"columnDescription": "This field will contain the unique number assigned to each loan by Our Investors",
+					"columnType": "SQL",
+					"sqlColumnName": "Loan_Number",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Draw Date",
+					"columnDescription": " This field will contain the Date in which the Unschedule/Repayment transaction that was performed",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "draw_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Advance Amount",
+					"columnDescription": "This field will contain the Amount of any Unscheduled/Repayment transaction performed (take into consideration any reversals) during the reporting month",
+					"columnType": "SQL",
+					"sqlColumnName": "amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":"SUM"
+				},
+				{
+					"columnName": "Transaction Type",
+					"columnDescription": " This field will contain the Transaction Type (Unscheduled/ Repayment) related to the trasaction that was performed",
+					"columnType": "SQL",
+					"sqlColumnName": "transaction_type",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+				},
+				{
+					"columnName": "Interest Due",
+					"columnDescription": "This field will contain the Amount of Interest associated with the Unschedule/Repayment transaction that was performed (take into consideration any reversals)",
+					"columnType": "SQL",
+					"sqlColumnName": "interest_due",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":"SUM"
+				},
+				{
+					"columnName": "Payoff Amount",
+					"columnDescription": "This field will contain the Payoff Amount (take into consideration any reversals)",
+					"columnType": "SQL",
+					"sqlColumnName": "payoff_amount",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": "",
+					"aggregateType":"SUM"
+				},
+				{
+					"columnName": "Payoff Date",
+					"columnDescription": "This field will contain the Date in which the Payoff transaction was completed (take into consideration any reversals)",
+					"columnType": "SQLDATE",
+					"sqlColumnName": "payoff_date",
+					"mapperClassName": "",
+					"calculationMapper": "",
+					"hardCodedValue": ""
+					
+				}
+			]
+		}
+	]
+}

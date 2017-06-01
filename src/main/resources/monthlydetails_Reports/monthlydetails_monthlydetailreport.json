@@ -1,0 +1,511 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "ChampionScheduleMonthlysReport",
+  "investorName": "BOA",
+  "servicerID": "",
+  "sqlQueryFileName": "monthlydetails_monthlydetailreport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": true,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "Champion Loan Number",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_num",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Investor Loan Number",
+          "columnDescription": "This field will contain the unique number assigned to each loan by Client",
+          "columnType": "SQL",
+          "sqlColumnName": "investor_loannum",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "GNMA Loan Number",
+          "columnDescription": "This field will contain the unique loan number assigned to each loan by GNMA",
+          "columnType": "SQL",
+          "sqlColumnName": "gnma_loannum",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Scheduled Monthly Advance",
+          "columnDescription": "This field will contain the SUM Amount of any Monthly Schedule Payment (take into consideration any reversals) during the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "scheduled_monthly_advance",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Disb Term Remaining",
+          "columnDescription": "This field will contain the Terms left in month for the loan at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "disb_term_remaining",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "First Payment Date",
+          "columnDescription": "This field will contain the DATE in which the First Payment was completed",
+          "columnType": "SQLDATE",
+          "sqlColumnName": "first_payment_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Total Monthly Advances to Date",
+          "columnDescription": "This field will contain the SUM Amount of any Monthly Schedule Payments (take into consideration any reversals) during the life of the loan",
+          "columnType": "SQL",
+          "sqlColumnName": "total_monthly_advances_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Total Unscheduled Advances to Date",
+          "columnDescription": "This field will contain the SUM Amount of any UnSchedule Payments (take into consideration any reversals) during the life of the loan",
+          "columnType": "SQL",
+          "sqlColumnName": "total_unscheduled_advances",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Total Advances",
+          "columnDescription": "This field will contain the SUM Amount of any UnSchedule Payments + Monthly Schedule Payments (take into consideration any reversals) during the life of the loan",
+          "columnType": "SQL",
+          "sqlColumnName": "total_advances",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Monthly Servicing Fee",
+          "columnDescription": "This field will contain the SUM Amount of any Servicing Fee  (take into consideration any reversals) during the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mon_serv_fee",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Growth Rate",
+          "columnDescription": "This field will contain the Current Interest Rate at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "growth_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Max Claim",
+          "columnDescription": "This field will contain the Max Claim Amount at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_max_claim",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MIP",
+          "columnDescription": "This field will contain the SUM Amount of the MIP column for the current reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mip",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Balance",
+          "columnDescription": "This field will contain the UPB value of the loan at the END of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_bal",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Available Line of Credit",
+          "columnDescription": "This field will contain the Current Net Line of Credit at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_avail_loc",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Last Draw Date",
+          "columnDescription": "This field will contain the DATE in which the  Last Draw transaction was effective",
+          "columnType": "SQLDATE",
+          "sqlColumnName": "last_draw",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Rate",
+          "columnDescription": "This field will contain the Current Interest Rate at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Rate Adjustment Frequency",
+          "columnDescription": "This field will contain the Interest Rate Change Requency Rate at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "rate_adj_freq",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Next Rate Adjustment Date",
+          "columnDescription": "This field will contain the DATE in which the New Interest Rate will become effective",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "next_rate_adjust_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Index",
+          "columnDescription": "This field will contain the Index Interest Rate at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "int_index",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Margin",
+          "columnDescription": "This field will contain the Interest Margin at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "margin",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Ceiling Rate",
+          "columnDescription": "This field will contain the Interest Ceiling Rate at the last day of the reporting month (Base on the Interest Rate Type)",
+          "columnType": "SQL",
+          "sqlColumnName": "ceiling_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Floor Rate",
+          "columnDescription": "This field will contain the Interest Floor Rate at the last day of the reporting month (Base on the Interest Rate Type)",
+          "columnType": "SQL",
+          "sqlColumnName": "floor_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Rate Type",
+          "columnDescription": "This field will contain the Rate Type at the last day of the reporting month",
+          "columnType": "MAPPED",
+          "sqlColumnName": "rate_type",
+          "mapperClassName": "RateTypeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Product Type",
+          "columnDescription": "This field will contain the Product Type at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "product_type",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Borrower 1 Date of Death",
+          "columnDescription": "This field will contain the DATE in which the  Borrower Died",
+          "columnType": "SQLDATE",
+          "sqlColumnName": "borrower_dod",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Loan Status Description",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the last day of the reporting month",
+          "columnType": "MAPPED",
+          "sqlColumnName": "loanb_sts",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Expected Rate",
+          "columnDescription": "This field will contain the Expected Average Interest Rate at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "expected_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Current Service Fee Set Aside",
+          "columnDescription": "This field will contain the Current Service Fee Set Aside at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_service_fee_sa",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current Repair Admin Set Aside",
+          "columnDescription": "This field will contain the Current Repairs's Set Aside amount at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_repair_sa",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current T&I Set Aside",
+          "columnDescription": "This field will contain the Current T&I Set Aside amount at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_ti_sa",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Current PL",
+          "columnDescription": "This field will contain the Current Net Principal at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "current_pl",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Accrued Interest",
+          "columnDescription": "This field will contain the SUM Amount of any Interests accrued (take into consideration any reversals) since the loan originated",
+          "columnType": "SQL",
+          "sqlColumnName": "accrued_interest",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MIP Accrued",
+          "columnDescription": "This field will contain the SUM Amount of any MIP accrued (take into consideration any reversals) since the loan originated",
+          "columnType": "SQL",
+          "sqlColumnName": "mip_accrued",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Service Fees Accrued",
+          "columnDescription": "This field will contain the SUM Amount of any Service Fees accrued (take into consideration any reversals) since the loan originated",
+          "columnType": "SQL",
+          "sqlColumnName": "service_fee_accrued",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "New Interest Rate",
+          "columnDescription": "This field will contain the New Interest Rate at the first day of the next reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Pay Type",
+          "columnDescription": "This field will contain the Payment Type Description related with the record in questions",
+          "columnType": "SQL",
+          "sqlColumnName": "pay_type",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Service Fee Margin",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Periodic Rate Cap",
+          "columnDescription": "TBD",
+          "columnType": "SQL",
+          "sqlColumnName": "periodic_cap",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Funding Date",
+          "columnDescription": "This field will contain the DATE in which the  Loan was Funded",
+          "columnType": "SQLDATE",
+          "sqlColumnName": "funding_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Most Recent Appr Value",
+          "columnDescription": "This field will contain the Last Appraisal Value associated with a loan during the current reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "most_recent_appr_val",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Original Term of Payments",
+          "columnDescription": "This field will contain the Terms left in month at the time the loan was originated",
+          "columnType": "SQL",
+          "sqlColumnName": "original_term_payments",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Property Charges Setaside",
+          "columnDescription": "This field will contain the Property Charges Set Aside at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "property_charges_sa",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Appraisal Date",
+          "columnDescription": "This field will contain the DATE in which the Last Appraisal was performed",
+          "columnType": "SQL",
+          "sqlColumnName": "appraisal_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "HECM Saver Flag",
+          "columnDescription": "This field will contain a \"Y\" in case the Loan Sub Type = Saver else the field will display a \"N\" at the end of the reporting month.",
+          "columnType": "SQL",
+          "sqlColumnName": "hecm_saver_flag",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Original Line of Credit",
+          "columnDescription": "This field will contain the Original Line of Credit Amount at the time the loan was originated",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "CreditLineSetAsideAmount",
+          "columnDescription": "This field will contain the Current Net Line of Credit Set Aside amount at the last day of the reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Interest Maximum",
+          "columnDescription": "TBD",
+          "columnType": "SQL",
+          "sqlColumnName": "interest_maximum",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        }
+      ]
+    }
+  ]
+}

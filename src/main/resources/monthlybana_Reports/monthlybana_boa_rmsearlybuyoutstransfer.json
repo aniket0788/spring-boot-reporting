@@ -1,0 +1,465 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "BOA-RMSEarlyBuyoutsTransferReport",
+  "investorName": "",
+  "servicerID": "",
+  "sqlQueryFileName": "monthlybana_boa_rmsearlybuyoutstransfer.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": "_",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs": [
+    {
+      "tabName": "MM.DD.YY",
+      "reportColumns": [
+        {
+          "columnName": "LOAN_NBR",
+          "columnDescription": "This field will contain the unique number assigned to each loan by NSM",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_no",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Estimated Buyout Report",
+          "columnDescription":  "This field will contain the unique month for which this report is from + Current Year + Current Tab assigned to each loan by NSM",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Loan Status mid month",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the MIDDLE of the reporting month",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_sts_mid_mon",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Loan Status end of month",
+          "columnDescription": "This field will contain the Status Code Description of the loan at the LAST DAY of the reporting month",
+          "columnType": "Mapped",
+          "sqlColumnName": "loan_sts_end_mon",
+          "mapperClassName": "LoanStatusCodeMapper",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "Change Status",
+          "columnDescription": "This field will contain Loan status changes",
+          "columnType": "SQL",
+          "sqlColumnName": "change_sts",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "UPB",
+          "columnDescription": "This field will contain the Current Total UPB amount at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "upb",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MCL",
+          "columnDescription": "This field will contain the Amount of the Current Max Claim at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mca",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "MCL%",
+          "columnDescription": "This field will contain the Percentage of the Current Max Claim Percentage Reached at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mca_percent",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CALLED_DUE_DATE",
+          "columnDescription": "This field will contain the LAST DATE in which the loan became CALLED DUE",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "REO Date",
+          "columnDescription": "This field will contain the DATE in which the loan status first change to a liquidated/held for sale",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Proceeds",
+          "columnDescription": "This field will contain the SUM Amount of any Procceds (take into consideration any reversals) during the reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Date of Liquidation",
+          "columnDescription": "This field will contain the MIN DATE in which the  Liquidation transaction was effective",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Transfer to RMS",
+          "columnDescription": "This field will be left blank/empty",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "CONTRACT_DATE",
+          "columnDescription": "This field will contain the DATE in which Settlement Contract was effective",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "SALE_PRICE",
+          "columnDescription": "This field will contain the SALE PRIECE amount for the Settlement of the loan",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "DUE_TO_CLOSE_DT",
+          "columnDescription": "This field will contain the DATE in which Settlement Contract is expected to be completed",
+          "columnType": "SQL",
+          "sqlColumnName": "due_close_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "EXTEND_CLOSE_DT",
+          "columnDescription": "This field will contain the DATE in which Settlement Contract Close Date was extended to be completed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "ACTUAL_CLOSE_DT",
+          "columnDescription": "This field will contain the DATE in which Settlement Contract was actually completed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "CLS_STAT_INSP_DT",
+          "columnDescription": "This field will contain the DATE in which ……...",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "WIRE_SENT_DT",
+          "columnDescription": "This field will contain the DATE in which Settlement Contract wire was sent",
+          "columnType": "SQL",
+          "sqlColumnName": "wire_date",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "UNIT1_EVICT_LKOT_DT",
+          "columnDescription": "This field will contain the DATE in which the Unit 1 Eviction was recorded",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "UNIT2_EVICT_LKOT_DT",
+          "columnDescription": "This field will contain the DATE in which the Unit 2 Eviction was recorded",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "UNIT3_EVICT_LKOT_DT",
+          "columnDescription": "This field will contain the DATE in which the Unit 3 Eviction was recorded",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "UNIT4_EVICT_LKOT_DT",
+          "columnDescription": "This field will contain the DATE in which the Unit 4 Eviction was recorded",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Min Number",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Repayment Plan",
+          "columnDescription": "This field will contain whether the Loan is under 'Repayment Plan Agreement' or not",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "DFLT_DATE",
+          "columnDescription": "This field will contain the LATEST DATE in which loan was flag in default",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "DFLT_BAL",
+          "columnDescription": "This field will contain the DEFAULT Amount of the loan at the end of the reporting month",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "First Legal Due",
+          "columnDescription": "This field will contain the LATEST DATE in which the  First legal Due was effective",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "BORROWER_FIRST_NAME",
+          "columnDescription": "This field will contain the Borrower's First Name",
+          "columnType": "SQL",
+          "sqlColumnName": "bor_firstname",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "BORROWER_LAST_NAME",
+          "columnDescription": "This field will contain the Borrower's Last Name",
+          "columnType": "SQL",
+          "sqlColumnName": "bor_lastname",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PROP_ADDRESS",
+          "columnDescription": "This field will contain the Address of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "prop_address",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PROP_CITY",
+          "columnDescription": "This field will contain the City of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "prop_city",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "PROP_STATE",
+          "columnDescription": "This field will contain the State of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "prop_state",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "PROP_ZIP_CODE",
+          "columnDescription": "This field will contain the Zip Code of the property",
+          "columnType": "SQL",
+          "sqlColumnName": "prop_zipcode",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "FCL_1ST_LEGAL_COMPLETED_DATE",
+          "columnDescription": "This field will contain the LATEST DATE in which the  Foreclosure 1st legal action was completed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "FCL_CONFIRMED_SALE_DATE",
+          "columnDescription": "This field will contain the LATEST DATE in which the  Foreclosure Sale was confirmed",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Referred to Eviction Counsel/Eviction Start Date",
+          "columnDescription": "This field will contain the DATE in which the  Eviction Process was effective",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "REO_SETUP_DATE",
+          "columnDescription": "This field will contain the DATE in which the  REO Process was set up",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "DAP Workout Status",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Active ACH",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Occupancy",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "DATE_SECURED",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Phone Number",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Attorney Name",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        },
+        {
+          "columnName": "Attorney Phone",
+          "columnDescription": "??????",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "NA"
+        }
+      ]
+    }
+  ]
+}

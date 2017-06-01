@@ -1,0 +1,103 @@
+{
+  "reportPath": "MECAREPORTS\\",
+  "reportFileName": "Monthly Trial Balance",
+  "investorName": "",
+  "servicerID": "268800000",
+  "sqlQueryFileName": "monthlystatus_monthlystatusreport.sql",
+  "appendPoolNumber": false,
+  "appendVersion": false,
+  "appendInvestorName": false,
+  "appendServicerId": false,
+  "fileNameSeparator": " ",
+  "isMonthlyReport": true,
+  "appendReportingMonth": "YYYYMMDD",
+  "sqlArguments": [
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "startDate",
+      "argumentValue": "",
+      "argumentMapper":"StartDateArgumentMapper"
+    },
+    {
+      "argumentType": "Date",
+      "argumentFormat": "yyyy-MM-dd",
+      "argumentName": "endDate",
+      "argumentValue": "",
+      "argumentMapper":"EndDateArgumentMapper"
+    }
+  ],
+  "reportTabs":[
+    {
+      "tabName": "Monthly Trial Balance",
+      "reportColumns": [
+        {
+          "columnName": "Company Name",
+          "columnDescription": " This field will value will be HARDCODED to 'Champion Mortgage'",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "Champion Mortgage"
+        },
+        {
+          "columnName": "Investor Number",
+          "columnType": "SQL",
+          "sqlColumnName": "investor_number",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        },
+        {
+          "columnName": "UnSchePmnt",
+          "columnDescription": "This field will contain the SUM Amount of the UnShcedule Paymnets for the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "unSche_pmnt",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "",
+          "aggregateType": "SUM"
+        },
+        {
+          "columnName": "Fannie Mae Adjustment",
+          "columnDescription": "This field will contain the SUM Amount of any Adj of Blance to match investor (take into consideration any reversals) amount for the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "fnma_adjust",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "",
+          "aggregateType": "SUM"
+        },
+        {
+          "columnName": "Service Fee Percentage",
+          "columnDescription": "TBD",
+          "columnType": "HARDCODED",
+          "sqlColumnName": "",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "TBD"
+        },
+        {
+          "columnName": "MIP Rate",
+          "columnDescription": "This field will contain the Amount of the MIP Rate at the end of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "mip_rate",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": "",
+          "aggregateType": "SUM"
+        },
+        {
+          "columnName": "StatusCode",
+          "columnDescription": "This field will contain the Status Code of the loan at the last day of the reporting month",
+          "columnType": "SQL",
+          "sqlColumnName": "loan_status",
+          "mapperClassName": "",
+          "calculationMapper": "",
+          "hardCodedValue": ""
+        }
+
+      ]
+    }
+  ]
+}
